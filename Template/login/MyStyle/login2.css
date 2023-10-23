@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Source Sans Pro;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    background: linear-gradient(red,blue,yellow);
+  
+}
+
+
+.all {
+    width: 50%;
+    max-width: 600px;
+    background:transparent;
+    border: 2px solid rgb(22, 6, 149);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0,.2);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.all h3 {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.all .input {
+    width: 100%;
+    height: 6vh;
+    position: relative;
+    margin: 30px 0;
+}
+
+.all .input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.all .input input {
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input .error {
+    color: red;
+    font-size: 14px;
+}
+.input button {
+    width: 100%;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.all i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.all p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.all p a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+#login-password-error{
+    margin-bottom: 8px;
+}
+.all p a:hover {
+    text-decoration: underline;
+}
+.under{
+    text-decoration: underline;
+    cursor: pointer;
+}
+button #show{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}

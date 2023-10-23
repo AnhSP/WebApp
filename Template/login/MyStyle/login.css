@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Source Sans Pro ;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/Image/login/a.jpg);
+}
+.all{
+   width: 50%;
+   max-width: 500px;
+   background:transparent;
+   border: 2px solid rgb(22, 6, 149);
+   backdrop-filter: blur(2px);
+   box-shadow: 0 0 10px rgba(0, 0, 0,.2);
+   color: white;
+   padding: 40px;
+   border-radius: 20px;
+   
+}
+.all h3{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 20px;
+}
+.all .input{
+    width: 100%;
+    height: 6vh;
+    position: relative;
+    margin: 30px 0;
+}
+.input input{
+   
+    width: 100%;
+    height: 100%;
+    background: rgb(185, 185, 244);
+    border: 2px solid rgb(95, 7, 167);
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+}
+.input input::placeholder{
+    color: white;
+}
+.input i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: aqua;
+    
+}
+.all .remember{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 20px;
+}
+  .remember a{
+    color: white;
+    text-decoration: none;
+}
+.remember:hover{
+    text-decoration: underline;   
+}
+.nut{
+    width: 100%;
+    height: 6vh;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.register{
+    font-size: 20px;
+    padding: 15px 0 15px;
+    text-decoration: none;
+}
+.register a{
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+
+button{
+    font-size: 20px;
+}
+.error{
+    color: red;
+    font-size: 18px;
+}
+.success{
+    color: green;
+    font-size: 18px;
+}

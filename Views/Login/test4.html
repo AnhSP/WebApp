@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang của bạn</title>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 20% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+        }
+
+        .close {
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button {
+            display: block;
+            margin: 10px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+    </style>
+    <script>
+        var loginButton = document.getElementById("login-button");
+        var loginForm = document.getElementById("login-form");
+        var closeButton = document.getElementsByClassName("close")[0];
+
+        loginButton.addEventListener("click", function () {
+            loginForm.style.display = "block";
+        });
+
+        closeButton.addEventListener("click", function () {
+            loginForm.style.display = "none";
+        });
+    </script>
+</head>
+
+<body>
+    <button id="login-button">Đăng nhập</button>
+
+    <div id="login-form" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Đăng nhập</h2>
+            <form action="#" method="POST">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Đặt phòng online</title>
+    <style>
+        /*CSS*/
+    
+        body{
+            background-image:url('https://png.pngtree.com/thumb_back/fh260/background/20230717/pngtree-d-render-illustration-of-megaphones-and-loudspeakers-on-a-purple-background-image_3893623.jpg');
+            background-repeat:no-repeat;
+            background-size:cover;
+
+            
+        }
+        .container{
+            max-width: 800px;
+            margin:0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 10px;
+            rgba(0,0,0,0.1);
+
+        }
+        h1{
+            color:#333;
+            text-align: center;
+
+        }
+        form{
+            margin-top: 20px;
+        }
+        label{
+            display:block;
+            margin-bottom: 10px;
+            font-weight: bold;
+
+        }
+        input[type="text"],
+        input[typ="email"],
+        select{
+            width:100%;
+            padding: 10px;
+            border:1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+
+        }
+        input[type="submit"]
+        {
+            background-color: #4CAF50;
+            color:#fff;\n
+            padding: 10px 20px;
+            border-none;
+            border-radius:4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: #45a049;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Đặt phòng online</h1>
+        <form action="submit.php" method="post">
+            <label for="maps">    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+                1d3919.1234567890123!2d106.69077123456789!3d10.762345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDUyJzEwLjQiTiAxMDbCsDAwJzUwLjAiRQ!5e0!3m2!1sen!2s!4v1234567890123"
+                width="600" height="450"
+                style="border:0";\allowfullscreen=""
+                loading="lazy"></iframe>Vị trí</label>
+            <label for="name">Tên:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Số điện thoại:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="checkin">Ngày nhận phòng:</label><br>
+            <input type="date" id="checkin" name="checkin"><br>
+            <label for="checkout">Ngày trả phòng:</label><br>
+            <input type="date" id="checkout" name="checkout"><br>
+            <label for="roomtype">Loại phòng:</label><br>
+            <select id="roomtype" name="roomtype">
+              <option value="standard">Phòng tiêu chuẩn</option>
+              <option value="deluxe">Phòng sang trọng</option>
+              <option value="suite">Phòng suite</option>
+            </select><br>
+            <label for="numrooms">Số phòng:</label><br>
+            <input type="number" id="numrooms" name="numrooms"><br>
+            <input type="submit" value="Tìm phòng">
+          </form>
+    </div>
+
+    
+</body>
+</html>
