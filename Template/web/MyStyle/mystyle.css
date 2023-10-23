@@ -1,3 +1,76 @@
-form{
+header{
+    background-image: url("/Image/web/head14.jpg");
+    /*chon anh: 9, 14, 15 */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    /* background-size: 90%; */
+    /* background-repeat: no-repeat; */
+}
+/* form{
+    margin-l   eft: 5%;
+} */
+hr{
+    color: white;
+    /* margin: 0%; */
+    border: 2px solid;
+    margin-bottom: 20%;
+    /* position: absolute; */
+}
+a{
+    text-decoration: none;
+}
+/* #navbarSupportedContent{
+    width: 100%;
+} */
+main{
+    height: 150vh;
+}
+#khung-search{
+    height: 20vh;
+    background: none;
+    background: rgb(255,255,255,.6);
+
+}
+#nutxuong{
+    right: 30px;
+}
+.navbar-toggler{
+    justify-content: end;
+    border: none;
+}
+#dieu-huong-search{
+    flex-direction:row;
+    align-items: start; 
+    justify-content: center;
     width: 50%;
+}
+#thanh-pho{
+    width: 15%;
+}
+#HaiPhong{
+    background-image: url('/Image/web/haiphong2.jpg'); 
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+}
+#HaNoi{
+    background-image: url('/Image/web/hanoi1.jpeg'); 
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+}
+#DaNang{
+    background-image: url('/Image/web/danang1.jpg'); 
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+}
+.card-img-top{
+    height: 100%;
+}
+footer{
+    height: 40vh;
 }
