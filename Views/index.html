@@ -1,153 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chu</title>
-    <link rel="stylesheet" href="/Template/web/bootstrap-5.2.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/Template/web/MyStyle/mystyle.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang chu</title>
+  <link rel="stylesheet" href="/Template/web/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/Template/web/MyStyle/mystyle.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header>
-        <div class="container-lg sticky-top" id="chua-nav">
-            <nav class="navbar navbar-expand-sm">
-                <a class="navbar-brand text-white">VieHome</a>
-                <div class="navbar-toggler">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <a href="#"><i class='bx bxs-user mr-4'></i></a>
-                </div>
-              
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link text-white"href="#">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Khách sạn</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Homestay</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Hỗ trợ</a>
-                    </li>
-                  </ul>
+  <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark" id="nav">
+    <div class="container-lg">
+    <a class="navbar-brand text-white">VieHome</a>
+    <div class="navbar-toggler">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#"><i class="bx bxs-user mr-4"></i></a>
+    </div>
 
-                  <!-- <form class="form-inline my-2 my-lg-0 m">
-                    <input class="form-control mr-sm-2 opacity-50" type="search" placeholder="Search" aria-label="Search">
-                  </form> -->
-                </div>
-                <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse">
-                  <li class="nav-item mx-1">
-                    <button class="nav-link btn btn-primary text-white">Đăng nhập</button>
-                  </li>
-                  <li class="nav-item mx-1">
-                    <button class="nav-link btn btn-outline-primary text-white">Đăng ký</button>
-                  </li>
-                </ul>         
-              </nav>
-        </div>
-        <hr>
-        <div class="container-lg" id="khung-search">
-          <nav class="navbar navbar-expand-lg" style="align-items: normal; justify-content: center;">
-            <ul class="navbar-nav" id="dieu-huong-search">
-              <li class="nav-item mx-sm-3 mx-lg-0">
-                <a class="nav-link" style="font-size: large; color: black;" href="#">Homestay</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="font-size: large; color: black; " href="#">Khách sạn</a>
-              </li>
-            </ul>
-          </nav>
-          <select class="form-select" id="thanh-pho">
-            <option selected>Thành phố</option>
-            <option value="HN">Hà Nội</option>
-            <option value="HP">Hải Phòng</option>
-            <option value="DN">Đà Nẵng</option>
-          </select>
-          <button class="btn btn-primary" type="button">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </header>
-    <main>
-      <div class="container-sm">
-        <h4>Những thành phố được yêu thích nhất</h4>
-        <div class="row justify-content-center">
-          <a href="#"  class=" col-sm-3 p-5 text-center text-white shadow-lg" id="HaiPhong">
-            <h4>Hải Phòng</h4>
-          </a>
-          <a href="#"  class=" col-sm-3 p-5 text-center text-white shadow-lg" id="HaNoi">
-            <h4>Hà Nội</h4>
-          </a>
-          <a href="#" class=" col-sm-3 p-5 text-center text-white shadow-lg" id="DaNang">
-            <h4>Đà Nẵng</h4>
-          </a>
-        </div>
-        <h4>Homestay</h4>
-        <div class="row justify-content-center">
-          <div class="card col-sm-3 m-2" style="width: 20%;">
-            <img class="card-img-top" src="" alt="Homestay1">
-            <div class="card-body">
-              <p>
-                lời mời gọi home 1
-              </p>
-            </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Khách sạn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Homestay</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Hỗ trợ</a>
+        </li>
+      </ul>
+    </div>
+    <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse">
+      <li class="nav-item mx-1">
+        <button class="nav-link btn btn-primary text-white">
+          Đăng nhập
+        </button>
+      </li>
+      <li class="nav-item mx-1">
+        <button class="nav-link btn btn-outline-primary text-white">
+          Đăng ký
+        </button>
+      </li>
+    </ul>
+    </div>
+  </nav>
+
+  <header class="">
+    <br>
+    <div class="container-lg" id="khung-search">
+      <nav class="navbar navbar-expand-lg" style="align-items: normal; justify-content: center">
+        <ul class="navbar-nav" id="dieu-huong-search">
+          <li class="nav-item mx-sm-3 mx-lg-0">
+            <a class="nav-link" style="font-size: large; color: black" href="#">Homestay</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: large; color: black" href="#">Khách sạn</a>
+          </li>
+        </ul>
+      </nav>
+      <select class="form-select" id="thanh-pho">
+        <option selected>Thành phố</option>
+        <option value="HN">Hà Nội</option>
+        <option value="HP">Hải Phòng</option>
+        <option value="DN">Đà Nẵng</option>
+      </select>
+      <button class="btn btn-primary" type="button">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="container-sm">
+      <h4>Những thành phố được yêu thích nhất</h4>
+      <div class="row justify-content-center">
+        <a href="#" class="col-sm-3 p-5 text-center text-white shadow-lg" id="HaiPhong">
+          <h4>Hải Phòng</h4>
+        </a>
+        <a href="#" class="col-sm-3 p-5 text-center text-white shadow-lg" id="HaNoi">
+          <h4>Hà Nội</h4>
+        </a>
+        <a href="#" class="col-sm-3 p-5 text-center text-white shadow-lg" id="DaNang">
+          <h4>Đà Nẵng</h4>
+        </a>
+      </div>
+      <h4>Homestay</h4>
+      <div class="row justify-content-center">
+        <div class="card col-sm-3 m-2" style="width: 20%">
+          <img class="card-img-top" src="" alt="Homestay1" />
+          <div class="card-body">
+            <p>lời mời gọi home 1</p>
           </div>
-          <div class="card col-sm-3 m-2" style="width: 20%;">
-            <img class="card-img-top" src="" alt="Homestay1">
-            <div class="card-body">
-              <p>
-                lời mời gọi home 2
-              </p>
-            </div>
+        </div>
+        <div class="card col-sm-3 m-2" style="width: 20%">
+          <img class="card-img-top" src="" alt="Homestay1" />
+          <div class="card-body">
+            <p>lời mời gọi home 2</p>
           </div>
-          <div class="card col-sm-3 m-2" style="width: 20%;">
-            <img class="card-img-top" src="" alt="Homestay1">
-            <div class="card-body">
-              <p>
-                lời mời gọi home 3
-              </p>
-            </div>
+        </div>
+        <div class="card col-sm-3 m-2" style="width: 20%">
+          <img class="card-img-top" src="" alt="Homestay1" />
+          <div class="card-body">
+            <p>lời mời gọi home 3</p>
           </div>
-          <div class="card col-sm-3 m-2" style="width: 20%;">
-            <img class="card-img-top" src="" alt="Homestay1">
-            <div class="card-body">
-              <p>
-                lời mời gọi home 4
-              </p>
-            </div>
+        </div>
+        <div class="card col-sm-3 m-2" style="width: 20%">
+          <img class="card-img-top" src="" alt="Homestay1" />
+          <div class="card-body">
+            <p>lời mời gọi home 4</p>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="bg-black text-white text-center">
-      <h3>Hỗ trợ khách hàng</h3>
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Liên hệ</h3>
-          <ul style="list-style: none;">
-            <li>Lê Thị Quỳnh Anh</li>
-            <li>Nguyễn Đắc Anh</li>
-            <li>Nguyễn Mạnh Hùng</li>
-            <li>Vũ Minh</li>
-          </ul>
-        </div>
-        <div class="col-sm-4">
-
-        </div>
-        <div class="col-sm-4">
-
-        </div>
+    </div>
+  </main>
+  <footer class="bg-black text-white text-center">
+    <h3>Hỗ trợ khách hàng</h3>
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Liên hệ</h3>
+        <ul style="list-style: none">
+          <li>Lê Thị Quỳnh Anh</li>
+          <li>Nguyễn Đắc Anh</li>
+          <li>Nguyễn Mạnh Hùng</li>
+          <li>Vũ Minh</li>
+        </ul>
       </div>
-    </footer>
-    
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4"></div>
+    </div>
+  </footer>
 
-    <script src="/Template/web/Jquery/jquery-3.7.1.min.js"></script>
-     <script src="/Template/web/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
-     <script src="/Template/web/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/Template/web/Jquery/jquery-3.7.1.min.js"></script>
+  <script src="/Template/web/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+  <script src="/Template/web/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

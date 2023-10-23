@@ -1,30 +1,15 @@
 header{
     background-image: url("/Image/web/head14.jpg");
-    /*chon anh: 9, 14, 15 */
     width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 80vh;
-    /* background-size: 90%; */
-    /* background-repeat: no-repeat; */
-}
-/* form{
-    margin-l   eft: 5%;
-} */
-hr{
-    color: white;
-    /* margin: 0%; */
-    border: 2px solid;
-    margin-bottom: 20%;
-    /* position: absolute; */
+    height: 70vh;
+    background-repeat: no-repeat;
 }
 a{
     text-decoration: none;
 }
-/* #navbarSupportedContent{
-    width: 100%;
-} */
 main{
     height: 150vh;
 }
@@ -32,7 +17,6 @@ main{
     height: 20vh;
     background: none;
     background: rgb(255,255,255,.6);
-
 }
 #nutxuong{
     right: 30px;
