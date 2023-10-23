@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng nhập và đăng ký</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+            background: linear-gradient(red,blue,yellow);
+        }
+
+        .container {
+            width: 400px;
+            
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container .input-group {
+            margin-bottom: 15px;
+        }
+
+        .container .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .container .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .container .input-group .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .container .input-group .success {
+            color: green;
+            font-size: 14px;
+        }
+
+        .container .input-group button {
+            width: 100%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .container p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .container p a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .container p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <form id="login-form" onsubmit="return validateLoginForm()">
+            <h3>Đăng nhập</h3>
+            <div class="input-group">
+                <label for="login-username">Tên đăng nhập</label>
+                <input type="text" id="login-username" name="username" placeholder="Nhập tên đăng nhập">
+                <span class="error" id="login-username-error"></span>
+            </div>
+            <div class="input-group">
+                <label for="login-password">Mật khẩu</label>
+                <input type="password" id="login-password" name="password" placeholder="Nhập mật khẩu">
+                <span class="error" id="login-password-error"></span>
+            </div>
+            <div class="input-group">
+                <button type="submit">Đăng nhập</button>
+            </div>
+            <p>Bạn chưa có tài khoản? <a href="#" onclick="showRegisterForm()">Đăng ký</a></p>
+        </form>
+
+
+
+        <form id="register-form" style="display: none;" onsubmit="return validateRegisterForm()">
+            <h3>Đăng ký</h3>
+            <div class="input-group">
+                <label for="register-fullname">Họ và tên</label>
+                <input type="text" id="register-fullname" name="fullname" placeholder="Nhập họ và tên">
+                <span class="error" id="register-fullname-error"></span>
+            </div>
+            <div class="input-group">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" name="email" placeholder="Nhập email">
+                <span class="error" id="register-email-error"></span>
+            </div>
+            <div class="input-group">
+                <label for="register-password">Mật khẩu</label>
+                <input type="password" id="register-password" name="password" placeholder="Nhập mật khẩu">
+                <span class="error" id="register-password-error"></span>
+            </div>
+            <div class="input-group">
+                <label for="register-confirm-password">Xác nhận mật khẩu</label>
+                <input type="password" id="register-confirm-password" name="confirmPassword" placeholder="Xác nhận mật khẩuTiếp tục từ phần trên:"></span>
+
+                <span class="error" id="register-confirm-password-error"></span>
+            </div>
+            <div class="input-group">
+                <button type="submit">Đăng ký</button>
+            </div>
+            <p>Bạn đã có tài khoản? <a href="#" onclick="showLoginForm()">Đăng nhập</a></p>
+        </form>
+    </div>
+
+    <script>
+        function showLoginForm() {
+            document.getElementById("login-form").style.display = "block";
+            document.getElementById("register-form").style.display = "none";
+        }
+
+        function showRegisterForm() {
+            document.getElementById("register-form").style.display = "block";
+            document.getElementById("login-form").style.display = "none";
+        }
+
+        function validateLoginForm() {
+            var username = document.getElementById("login-username").value;
+            var password = document.getElementById("login-password").value;
+
+            if (username === "" || password === "") {
+                document.getElementById("login-username-error").innerText = username === "" ? "Vui lòng nhập tên đăng nhập" : "";
+                document.getElementById("login-password-error").innerText = password === "" ? "Vui lòng nhập mật khẩu" : "";
+                return false;
+            }
+        }
+
+        function validateRegisterForm() {
+            var fullname = document.getElementById("register-fullname").value;
+            var email = document.getElementById("register-email").value;
+            var password = document.getElementById("register-password").value;
+            var confirmPassword = document.getElementById("register-confirm-password").value;
+
+            if (fullname === "" || email === "" || password === "" || confirmPassword === "") {
+                document.getElementById("register-fullname-error").innerText = fullname === "" ? "Vui lòng nhập họ và tên" : "";
+                document.getElementById("register-email-error").innerText = email === "" ? "Vui lòng nhập email" : "";
+                document.getElementById("register-password-error").innerText = password === "" ? "Vui lòng nhập mật khẩu" : "";
+                document.getElementById("register-confirm-password-error").innerText = confirmPassword === "" ? "Vui lòng xác nhận mật khẩu" : "";
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                document.getElementById("register-confirm-password-error").innerText = "Mật khẩu xác nhận không khớp";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

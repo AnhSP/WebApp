@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Source Sans Pro ;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.all{
+    height: 50vh;
+    width: 50%;
+    max-width: 500px;
+    background-color: orange;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    
+}
+h3{
+    font-size: 36px;
+    text-align: center;
+}
+.under{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+input{
+    border:2px solid ;
+}
+form{
+   
+}
+label{
+    display: flex;
+    flex-direction: row;
+}
+
+
