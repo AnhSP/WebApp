@@ -12,14 +12,15 @@
   <!-- <link rel="stylesheet" href="/Template/web/bootstrap-icons-1.11.1/search.svg"> -->
   <!-- <link rel="stylesheet" href="/Template/web/bootstrap-5.2.3-dist/css/fontawesome.min.css"> -->
   <link rel="stylesheet" href="/Template/web/fontawesome-free-6.4.2-web/css/all.min.css">
+  <!-- khai báo web font, không phải của bootstrap  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <!-- khai báo bootstrap datepicker, để hiển thị ngày tháng năm  -->
   <script src="/Template/web/MyJavaScript/myscript.js"></script>
-
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark" id="nav">
+  <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark" id="nav"> <!-- Cụm menu -->
     <div class="container-lg">
       <a class="navbar-brand text-white">VieHome</a>
 
@@ -40,23 +41,18 @@
             <a class="nav-link menu-link" href="#" style="color: white;">Khách sạn</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link menu-link" href="#" style="color: white;">Homestay</a>
+            <a class="nav-link menu-link" href="/Views/homestay/Homestay.html" style="color: white;">Homestay</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link menu-link" href="#" style="color: white;">Hỗ trợ</a>
+            <a class="nav-link menu-link" href="/Views/Ho tro/hotro.html" style="color: white;">Hỗ trợ</a>
           </li>
         </ul>
       </div>
 
-      <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse">
+      <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse"> <!-- Xác minh tài khoản -->
         <li class="nav-item mx-1">
           <button class="nav-link btn btn-primary text-white" >
             <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
-          </button>
-        </li>
-        <li class="nav-item mx-1">
-          <button class="nav-link btn btn-outline-primary text-white">
-            <a href="/Views/Login/Register.html" style="color: white;">Đăng ký</a>
           </button>
         </li>
       </ul>
@@ -174,7 +170,6 @@
   </main>
 
   <footer class="bg-black text-white text-center p-5"> <!-- Phần dưới cùng -->
-    <!-- <h3>Hỗ trợ khách hàng</h3> -->
     <div class="row" style="margin: 0px;">
       <div class="col-sm-4">
         <h3>Thành viên</h3>
@@ -182,7 +177,7 @@
           <li>Lê Thị Quỳnh Anh</li>
           <li>Nguyễn Đắc Anh</li>
           <li>Nguyễn Mạnh Hùng</li>
-          <li>Vũ Minh</li>
+          <li>Vũ Ngọc Minh</li>
         </ul>
       </div>
       <div class="col-sm-4">
@@ -205,12 +200,15 @@
           </li>
           <li>
             <a href="" style="color: white;">
-              <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Vũ Minh
+              <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Ngọc Minh
             </a>
           </li>
         </ul>
       </div>
-      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <h3>Trợ giúp</h3>
+        <a href="/Views/Ho tro/hotro.html" style="color: white;">Trung tâm trợ giúp</a>
+      </div>
     </div>
   </footer>
 
