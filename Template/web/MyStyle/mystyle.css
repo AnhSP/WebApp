@@ -4,8 +4,28 @@ header{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 70vh;
+    height: 60vh;
     background-repeat: no-repeat;
+}
+ul#menu a{
+    position: relative;
+}
+ul#menu a::after{
+    content: "";
+    height: 5px;
+    width: 0px;
+    background: yellow;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+ul#menu a:hover::after{
+    width: 100%;
+    /* transform: translateX(100%); */
+}
+ul#menu a:hover{
+    color: yellow !important;
 }
 a{
     text-decoration: none;
@@ -14,25 +34,29 @@ main{
     height: 150vh;
 }
 #khung-search{
+    margin-top: 100px;
     height: 20vh;
     background: none;
     background: rgb(255,255,255,.6);
 }
-#nutxuong{
+/* #nutxuong{
     right: 30px;
-}
+} */
 .navbar-toggler{
     justify-content: end;
     border: none;
 }
-#dieu-huong-search{
+#menu-search{
     flex-direction:row;
     align-items: start; 
     justify-content: center;
     width: 50%;
 }
+ul#menu-search a:hover{
+    color: hotpink !important;
+}
 #thanh-pho{
-    width: 15%;
+    width: 20%;
 }
 #HaiPhong{
     background-image: url('/Image/web/haiphong2.jpg'); 

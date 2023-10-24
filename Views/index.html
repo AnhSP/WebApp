@@ -8,78 +8,97 @@
   <link rel="stylesheet" href="/Template/web/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/Template/web/MyStyle/mystyle.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="/Template/web/bootstrap-icons-1.11.1/search.svg"> -->
+  <!-- <link rel="stylesheet" href="/Template/web/bootstrap-5.2.3-dist/css/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="/Template/web/fontawesome-free-6.4.2-web/css/all.min.css">
+  <script src="/Template/web/MyJavaScript/myscript.js"></script>
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark" id="nav">
     <div class="container-lg">
-    <a class="navbar-brand text-white">VieHome</a>
-    <div class="navbar-toggler">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a href="#"><i class="bx bxs-user mr-4"></i></a>
-    </div>
+      <a class="navbar-brand text-white">VieHome</a>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link text-white" href="#">Trang chủ</a>
+      <div class="navbar-toggler">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#"><i class="bx bxs-user mr-4"></i></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto" id="menu">
+          <li class="nav-item active">
+            <a class="nav-link menu-link" href="/Views/index.html" style="color: white;">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-link" href="#" style="color: white;">Khách sạn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-link" href="#" style="color: white;">Homestay</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-link" href="#" style="color: white;">Hỗ trợ</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse">
+        <li class="nav-item mx-1">
+          <button class="nav-link btn btn-primary text-white" >
+            <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
+          </button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Khách sạn</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Homestay</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Hỗ trợ</a>
+        <li class="nav-item mx-1">
+          <button class="nav-link btn btn-outline-primary text-white">
+            <a href="/Views/Login/Register.html" style="color: white;">Đăng ký</a>
+          </button>
         </li>
       </ul>
     </div>
-    <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse">
-      <li class="nav-item mx-1">
-        <button class="nav-link btn btn-primary text-white">
-          Đăng nhập
-        </button>
-      </li>
-      <li class="nav-item mx-1">
-        <button class="nav-link btn btn-outline-primary text-white">
-          Đăng ký
-        </button>
-      </li>
-    </ul>
-    </div>
   </nav>
 
-  <header class="">
+  <header>
     <br>
     <div class="container-lg" id="khung-search">
       <nav class="navbar navbar-expand-lg" style="align-items: normal; justify-content: center">
-        <ul class="navbar-nav" id="dieu-huong-search">
-          <li class="nav-item mx-sm-3 mx-lg-0">
-            <a class="nav-link" style="font-size: large; color: black" href="#">Homestay</a>
+        <ul class="navbar-nav" id="menu-search">
+          <li class="nav-item mx-1">
+            <a class="nav-link" style="font-size: large; color: black" href="#" onclick="">
+              <i class="fa-solid fa-house"></i>Homestay
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: large; color: black" href="#">Khách sạn</a>
+          <li class="nav-item mx-1">
+            <a class="nav-link" style="font-size: large; color: black" href="#" onclick="">
+              <i class="fa-solid fa-hotel"></i>Khách sạn
+            </a>
           </li>
         </ul>
       </nav>
-      <select class="form-select" id="thanh-pho">
-        <option selected>Thành phố</option>
-        <option value="HN">Hà Nội</option>
-        <option value="HP">Hải Phòng</option>
-        <option value="DN">Đà Nẵng</option>
-      </select>
-      <button class="btn btn-primary" type="button">
-        <i class="fas fa-search"></i>
-      </button>
+
+      <class class="row">
+        <select class="form-select" id="thanh-pho">
+          <option selected>Thành phố</option>
+          <option value="HN">Hà Nội</option>
+          <option value="HP">Hải Phòng</option>
+          <option value="DN">Đà Nẵng</option>
+        </select>
+        <button class="btn btn-primary" style="height: 40px; width: 40px;" type="button">
+          <i class="bi bi-search"></i>
+        </button>
+      </class>
+
     </div>
   </header>
+
   <main>
     <div class="container-sm">
-      <h4>Những thành phố được yêu thích nhất</h4>
+      <h4>
+        <i class="fa-solid fa-city" style="color: #04ff00;"></i>Những thành phố được yêu thích nhất
+      </h4>
       <div class="row justify-content-center">
         <a href="#" class="col-sm-3 p-5 text-center text-white shadow-lg" id="HaiPhong">
           <h4>Hải Phòng</h4>
@@ -91,7 +110,10 @@
           <h4>Đà Nẵng</h4>
         </a>
       </div>
-      <h4>Homestay</h4>
+
+      <h4>
+        <i class="fa-solid fa-house-user" style="color: #04ff00;"></i>Homestay
+      </h4>
       <div class="row justify-content-center">
         <div class="card col-sm-3 m-2" style="width: 20%">
           <img class="card-img-top" src="" alt="Homestay1" />
@@ -120,9 +142,10 @@
       </div>
     </div>
   </main>
+
   <footer class="bg-black text-white text-center">
     <h3>Hỗ trợ khách hàng</h3>
-    <div class="row">
+    <div class="row" style="margin: 0px;">
       <div class="col-sm-4">
         <h3>Liên hệ</h3>
         <ul style="list-style: none">
