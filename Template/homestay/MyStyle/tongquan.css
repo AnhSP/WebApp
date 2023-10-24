@@ -1,0 +1,78 @@
+#tongquan{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 60%;
+    min-width: 800px;
+}.right{
+    width: 35%;
+}
+.sao img{
+    height: 20px;
+    width: 20px;
+}
+img.anh{
+    height: 30px;
+    width: 30px;
+}
+.one,.two,.three,.firstr,.map{
+    border-radius: 10px ;
+    border: 2px solid rgb(74, 72, 70);
+    margin: 20px;
+}
+img.anhh{
+    height: 15px;
+    width: 15px;
+}img.size{
+    height: 30px;
+    width: 30px;
+}
+img.anhhh{
+    height: 15px;
+    width: 15px;
+}
+button.nho{
+    background-color: rgb(52, 231, 52);
+    color: rgb(66, 14, 236);
+    font-size: 18px;
+    border-radius: 5px;
+}
+.one,.two,.three{
+    padding: 20px;
+}
+.threed{
+    display: flex;
+}
+.first{
+    margin: 5px;
+}
+.dichvuu{
+    display: flex;
+    justify-content: space-around;
+}
+.dichvu{
+    border: 1px solid rgb(218, 186, 186);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+p.size{
+    font-size: x-large;
+}
+.danhgia{
+    border: 1px solid rgb(218, 186, 186);
+    width: 120px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.danhgiaa{
+    display: flex;
+    flex-wrap: wrap;
+}
+.firstr,.map{
+    padding: 20px;
+}
+.mapouter{
+    
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Template/homestay/MyStyle/home1.css">
+    <script src="/Template/login/Jquery/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+   
+    <div class="anhnen">
+        <div class="anhchinh">
+            <div class="img-ll">
+                <img src="/Image/homestay/hanoi/an's home/7.jpg" alt="">
+            </div>
+            <button class="xem"><a href="#">xem tất cả ảnh</a></button>
+        </div>
+        <div class="img-mm">
+            <div class="up">
+                <div class="img">
+                    <img src="/Image/homestay/hanoi/an's home/10.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="/Image/homestay/hanoi/an's home/11.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="/Image/homestay/hanoi/an's home/12.jpg" alt="">
+                </div>
+            </div>
+            <div class="down">
+                <div class="img">
+                    <img src="/Image/homestay/hanoi/an's home/1.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="/Image/homestay/hanoi/an's home/2.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="/Image/homestay/hanoi/an's home/8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar">
+        <ul id="menu" >
+            <li><a href="">Tổng quan</a></li>
+            <li><a href="">Phòng </a></li>
+            <li><a href="">Tiện nghi</a></li>
+            <li><a href="">Đánh giá</a></li>
+            <li><a href="">Chính sách</a></li>
+            <li><a href="">Giá</a></li> 
+        </ul>
+    </div>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+   
+</body>
+</html>

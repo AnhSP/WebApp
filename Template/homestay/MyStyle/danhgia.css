@@ -1,0 +1,40 @@
+.hcn1{
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right, rgb(37, 139, 248) 70%, transparent 20%);
+    border-radius: 5px;
+    border: 1px solid green;
+}
+.hcn2{
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right, rgb(37, 139, 248) 40%, transparent 20%);
+    border-radius: 5px;
+    border: 1px solid green;
+}
+.hcn3{
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right, rgb(37, 139, 248) 10%,transparent 10%);
+    border-radius: 5px;
+    border: 1px solid green;
+}
+.hcn4{
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right, rgb(37, 139, 248) 0%);
+    border-radius: 5px;
+    border: 1px solid green;
+}
+.hcn5{
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right, rgb(37, 139, 248) 0%);
+    border-radius: 5px;
+    border: 1px solid green;
+}
+i{
+    color:aqua;
+    width: 20px;
+    height: 20px;
+}

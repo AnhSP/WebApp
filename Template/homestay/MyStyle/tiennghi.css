@@ -1,0 +1,64 @@
+.all{
+    border-radius: 10px ;
+    border: 2px solid rgb(74, 72, 70);
+    margin: 20px;
+    padding: 20px;
+    min-width: 800px;
+}
+img.anhh{
+    height: 17px;
+    width: 17px;
+    margin: 10px;
+}
+img.ass{
+    height: 60px;
+    width: 60px;
+}
+.all-assess{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+  
+
+}
+.assess{
+    padding: 20px;
+   
+}
+.full{
+    display: flex;
+    justify-content: space-between;
+
+}
+.firstc,.secondc,.thirdc{
+    display: flex;
+    flex-direction: column;
+}
+p.tn{
+    font-size: large;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 25px;
+  }
+.assess>p{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+  
+  .anhh {
+    vertical-align: middle;
+  }
+  span{
+    font-size: 22px;
+  }
+ 
+  
+  
+  
+
