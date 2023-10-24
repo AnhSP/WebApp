@@ -35,7 +35,7 @@ main{
 }
 #khung-search{
     margin-top: 100px;
-    height: 20vh;
+    height: 35vh;
     background: none;
     background: rgb(255,255,255,.6);
 }
@@ -54,9 +54,6 @@ main{
 }
 ul#menu-search a:hover{
     color: hotpink !important;
-}
-#thanh-pho{
-    width: 20%;
 }
 #HaiPhong{
     background-image: url('/Image/web/haiphong2.jpg'); 

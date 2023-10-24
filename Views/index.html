@@ -12,7 +12,9 @@
   <!-- <link rel="stylesheet" href="/Template/web/bootstrap-icons-1.11.1/search.svg"> -->
   <!-- <link rel="stylesheet" href="/Template/web/bootstrap-5.2.3-dist/css/fontawesome.min.css"> -->
   <link rel="stylesheet" href="/Template/web/fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
   <script src="/Template/web/MyJavaScript/myscript.js"></script>
+
 </head>
 
 <body>
@@ -21,7 +23,7 @@
     <div class="container-lg">
       <a class="navbar-brand text-white">VieHome</a>
 
-      <div class="navbar-toggler">
+      <div class="navbar-toggler"> <!-- Menu trên đt -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,7 +31,7 @@
         <a href="#"><i class="bx bxs-user mr-4"></i></a>
       </div>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu trên PC -->
         <ul class="navbar-nav mr-auto" id="menu">
           <li class="nav-item active">
             <a class="nav-link menu-link" href="/Views/index.html" style="color: white;">Trang chủ</a>
@@ -65,6 +67,7 @@
     <br>
     <div class="container-lg" id="khung-search">
       <nav class="navbar navbar-expand-lg" style="align-items: normal; justify-content: center">
+        <!-- Chọn homestay hoặc khách sạn -->
         <ul class="navbar-nav" id="menu-search">
           <li class="nav-item mx-1">
             <a class="nav-link" style="font-size: large; color: black" href="#" onclick="">
@@ -79,24 +82,51 @@
         </ul>
       </nav>
 
-      <class class="row">
-        <select class="form-select" id="thanh-pho">
-          <option selected>Thành phố</option>
-          <option value="HN">Hà Nội</option>
-          <option value="HP">Hải Phòng</option>
-          <option value="DN">Đà Nẵng</option>
-        </select>
-        <button class="btn btn-primary" style="height: 40px; width: 40px;" type="button">
-          <i class="bi bi-search"></i>
-        </button>
-      </class>
+      <div class="row"> 
+        <div class="col-sm-3"> <!-- Chọn thành phố  -->
+          <select class="form-select" id="thanh-pho" style="width: 90%; height: 100%;">
+            <option selected>Thành phố</option>
+            <option value="HN">Hà Nội</option>
+            <option value="HP">Hải Phòng</option>
+            <option value="DN">Đà Nẵng</option>
+          </select>
+        </div>
 
+        <div class="col-sm-3"> <!--Chọn ngày đén  -->
+          <div class="date input-group  datepicker" style="width: 90%;">
+            <input class="form-control" type="text" placeholder="Chọn ngày đi">
+            <span class="input-group-append">
+              <span class="input-group-text bg-white d-block">
+                <i class="fa-solid fa-calendar-days" style="color: #020203;"></i>
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <div class="col-sm-3"> <!--Chọn ngày về  -->
+          <div class="date input-group  datepicker" style="width: 90%;">
+            <input class="form-control" type="text" placeholder="Chọn ngày về">
+            <span class="input-group-append">
+              <span class="input-group-text bg-white d-block">
+                <i class="fa-solid fa-calendar-days" style="color: #020203;"></i>
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <button class="btn btn-primary" style="height: 40px; width: 40px;" type="button"> <!-- Nút tìm kiếm -->
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+
+      </div>
     </div>
   </header>
 
   <main>
     <div class="container-sm">
-      <h4>
+      <h4> <!-- Liệt kê thành phố -->
         <i class="fa-solid fa-city" style="color: #04ff00;"></i>Những thành phố được yêu thích nhất
       </h4>
       <div class="row justify-content-center">
@@ -111,7 +141,7 @@
         </a>
       </div>
 
-      <h4>
+      <h4> <!-- Liệt kê homstay -->
         <i class="fa-solid fa-house-user" style="color: #04ff00;"></i>Homestay
       </h4>
       <div class="row justify-content-center">
@@ -143,11 +173,11 @@
     </div>
   </main>
 
-  <footer class="bg-black text-white text-center">
-    <h3>Hỗ trợ khách hàng</h3>
+  <footer class="bg-black text-white text-center p-5"> <!-- Phần dưới cùng -->
+    <!-- <h3>Hỗ trợ khách hàng</h3> -->
     <div class="row" style="margin: 0px;">
       <div class="col-sm-4">
-        <h3>Liên hệ</h3>
+        <h3>Thành viên</h3>
         <ul style="list-style: none">
           <li>Lê Thị Quỳnh Anh</li>
           <li>Nguyễn Đắc Anh</li>
@@ -155,7 +185,31 @@
           <li>Vũ Minh</li>
         </ul>
       </div>
-      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <h3>Thông tin liên hệ</h3>
+        <ul style="list-style: none">
+          <li>
+            <a href="https://www.facebook.com/blader.buster.9" style="color: white;">
+              <i class="fa-brands fa-facebook" style="color: #0561ff;"></i></i>Quỳnh Anh
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC8vmMGd34GkBUZ_KodSG6XQ" style="color: white;">
+              <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>Đắc Anh
+            </a>
+          </li>
+          <li>
+            <a href="" style="color: white;">
+              <i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>Mạnh Hùng
+            </a>
+          </li>
+          <li>
+            <a href="" style="color: white;">
+              <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Vũ Minh
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="col-sm-4"></div>
     </div>
   </footer>
@@ -163,6 +217,7 @@
   <script src="/Template/web/Jquery/jquery-3.7.1.min.js"></script>
   <script src="/Template/web/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
   <script src="/Template/web/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 </body>
 
 </html>
