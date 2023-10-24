@@ -1,7 +1,7 @@
-ul#menu a{
+ul#main-menu a{
     position: relative;
 }
-ul#menu a::after{
+ul#main-menu a::after{
     content: "";
     height: 5px;
     width: 0px;
@@ -11,27 +11,24 @@ ul#menu a::after{
     left: 0;
     transition: all 0.5s ease-in-out;
 }
-ul#menu a:hover::after{
+ul#main-menu a:hover::after{
     width: 100%;
     /* transform: translateX(100%); */
 }
-ul#menu a:hover{
+ul#main-menu a:hover{
     color: yellow !important;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 main{
     width: 100%;
     height: 150vh;
 
 }
-/* #nutxuong{
-    right: 30px;
-} */
 .navbar-toggler{
     justify-content: end;
-    border: none;
+    border: none !important;
 }
 #menu-search{
     flex-direction:row;
