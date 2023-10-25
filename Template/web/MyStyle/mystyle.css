@@ -31,7 +31,8 @@ a{
     text-decoration: none;
 }
 main{
-    height: 150vh;
+    height: 100%;
+    padding-bottom: 50px;
 }
 #khung-search{
     margin-top: 100px;
@@ -39,9 +40,10 @@ main{
     background: none;
     background: rgb(255,255,255,.6);
 }
-/* #nutxuong{
-    right: 30px;
-} */
+.selected {
+    background-color: #FF5733; /* Màu nổi khi được chọn */
+    color: white; /* Màu chữ khi được chọn */
+}
 .navbar-toggler{
     justify-content: end;
     border: none;
@@ -78,4 +80,8 @@ ul#menu-search a:hover{
 }   
 footer{
     height: 50vh;
+}
+img{
+    height: 25vh !important;
+    width: 35vh !important;
 }

@@ -23,7 +23,7 @@ a{
 }
 main{
     width: 100%;
-    height: 150vh;
+    height: 100%;
 
 }
 .navbar-toggler{
@@ -45,3 +45,8 @@ ul#menu-search a:hover{
 footer{
     height: 50vh;
 }
+img.card-img-top{
+    height: 25vh !important;
+    width: 35vh !important;
+}
+

@@ -1,27 +1,57 @@
-window.addEventListener("load", function(){
-    $('.datepicker').datepicker({
-        autoclose: true, 
-        todayHighlight: true,
-        todayBtn : "linked",
-        title : "Chon ngày tháng năm",
-        format: 'dd/mm/yyyy'
-    });
+window.addEventListener("load", function () {
+  $('.datepicker').datepicker({
+    autoclose: true,
+    todayHighlight: true,
+    todayBtn: "linked",
+    title: "Chon ngày tháng năm",
+    format: 'dd/mm/yyyy'
+  });
 })
-function search() {
-    // Lấy giá trị ngày tháng năm từ các phần tử input
+
+document.addEventListener("DOMContentLoaded", function() {
+  const homestayOption = document.querySelector("#homestay-option");
+  const hotelOption = document.querySelector("#hotel-option");
+
+  // Sự kiện click cho lựa chọn "Homestay"
+  homestayOption.addEventListener("click", function() {
+    // Loại bỏ lớp CSS "selected" từ tất cả các lựa chọn
+    hotelOption.classList.remove("selected");
+
+    // Thêm lớp CSS "selected" cho lựa chọn "Homestay"
+    homestayOption.classList.add("selected");
+  });
+
+  // Sự kiện click cho lựa chọn "Khách sạn"
+  hotelOption.addEventListener("click", function() {
+    // Loại bỏ lớp CSS "selected" từ tất cả các lựa chọn
+    homestayOption.classList.remove("selected");
+
+    // Thêm lớp CSS "selected" cho lựa chọn "Khách sạn"
+    hotelOption.classList.add("selected");
+  });
+
+  // Hàm xử lý tìm kiếm và điều hướng
+  function searchAndNavigate() {
     const ngayDi = document.querySelector("#ngay-di").value;
     const ngayVe = document.querySelector("#ngay-ve").value;
-    // Lấy giá trị thành phố từ phần tử select
     const thanhPho = document.querySelector("#thanh-pho").value;
-  
-    // Kiểm tra nếu có giá trị hợp lệ thì thực hiện tác vụ tìm kiếm
+    const selectedOption = document.querySelector(".selected").textContent.trim(); // Lựa chọn đã chọn
+
     if (ngayDi && ngayVe && thanhPho !== "Thành phố") {
-      // Thực hiện tác vụ tìm kiếm, ví dụ: chuyển người dùng đến trang kết quả
-      // window.location.href = `/ket-qua-tim-kiem?ngayDi=${ngayDi}&ngayVe=${ngayVe}&thanhPho=${thanhPho}`;
-      alert(`Tìm kiếm với ngày đi: ${ngayDi}, ngày về: ${ngayVe}, thành phố: ${thanhPho}`);
+      // alert(`Tìm kiếm với ngày đi: ${ngayDi}, ngày về: ${ngayVe}, thành phố: ${thanhPho}`);
+      if (selectedOption === "Homestay") {
+        // Điều hướng đến trang homestay
+        window.location.href = "/Views/homestay/Homestay.html";
+      } else if (selectedOption === "Khách sạn") {
+        // Điều hướng đến trang khách sạn
+        window.location.href = "/Views/hotel/Hotel.html";
+      }
     } else {
-      // Xử lý trường hợp người dùng chưa nhập đủ thông tin hoặc chưa chọn thành phố
-      alert("Vui lòng nhập ngày và chọn thành phố để tìm kiếm.");
+      alert("Vui lòng nhập đủ thông tin và chọn một lựa chọn.");
     }
   }
-  
+
+  // Sự kiện click cho nút tìm kiếm và điều hướng
+  const searchButton = document.querySelector("#search-button");
+  searchButton.addEventListener("click", searchAndNavigate);
+});
