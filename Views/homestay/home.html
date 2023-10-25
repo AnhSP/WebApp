@@ -18,7 +18,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark" id="nav"> <!-- Cụm menu -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="nav"> <!-- Cụm menu
         <div class="container-lg">
             <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
     
@@ -56,7 +56,7 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> 
    
     <div class="anhnen">
         <div class="anhchinh">
@@ -90,7 +90,7 @@
             </div>
         </div>
     </div>
-    <div id="navbar">
+    <div id="navbar" class="sticky-top ">
         <ul id="menu" >
             <li><a href="">Tổng quan</a></li>
             <li><a href="">Phòng </a></li>
@@ -212,7 +212,7 @@
                   marginwidth="0" 
                   src="https://maps.google.com/maps?q=Hồ+Tây,+Hà+Nội,+Việt+Nam&hl=en&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                 </iframe>
-              </div>v   
+              </div>  
 
         </div>
     </div>
@@ -436,6 +436,24 @@
           } else {
             navbar.classList.remove("sticky");
           }
+        }
+                // JavaScript để xử lý sự kiện khi người dùng ấn vào các phần tử trên thanh navbar
+            const navbarLinks = document.querySelectorAll('.navbar a');
+
+        navbarLinks.forEach(link => {
+        link.addEventListener('click', smoothScroll);
+        });
+
+        function smoothScroll(event) {
+        event.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(tongquan);
+
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
         }
     
     </script>  

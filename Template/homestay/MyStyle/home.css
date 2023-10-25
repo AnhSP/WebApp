@@ -72,10 +72,11 @@ button.xem a{
 ul#menu{
     list-style-type: none;
     padding: 40px;
-    background-color: white;
+    background-color: rgb(65, 222, 224);
 }
 ul#menu li a{
     font-size: 30px;
+
 }
 div.diachi span a{
     font-size: 30px;
