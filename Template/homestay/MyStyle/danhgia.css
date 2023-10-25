@@ -1,6 +1,6 @@
 .hcn1{
-    width: 100px;
-    height: 5px;
+    width: 15%;
+    height: 20px;
     background: linear-gradient(to right, rgb(37, 139, 248) 70%, transparent 20%);
     border-radius: 5px;
     border: 1px solid green;

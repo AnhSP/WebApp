@@ -1,25 +1,25 @@
 .allc{
-    border-radius: 10px ;
-    border: 2px solid rgb(74, 72, 70);
-    margin: 20px;
-    padding: 20px;
-    min-width: 800px;
+  border-radius: 10px ;
+  border: 2px solid rgb(74, 72, 70);
+  margin: 20px;
+  padding: 20px;
+  min-width: 800px;
 }
 .divice{
-    display: flex;
-    
+  display: flex;
+  
 }
 img.im{
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
 .chia{
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid rgb(73, 72, 72);
-    border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(73, 72, 72);
+  border-radius: 10px;
 }
 p{
-    font-size: 20px;
+  font-size: 20px;
 }

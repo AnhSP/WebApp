@@ -13,9 +13,10 @@ body{
     justify-content: center;
 }
 .anhchinh{
-    width: 35%;
+    /* width: 35%; */
     min-width: 400px;
-    height: 500px;
+    height: 400px !important;
+
     position: relative;
 }
 .img-mm{
@@ -37,7 +38,7 @@ body{
     margin: 5px;
     width: 33%;
     min-width: 200px  ;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
 }
 img{

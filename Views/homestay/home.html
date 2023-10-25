@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/Template/homestay/MyStyle/danhgia.css">
     <link rel="stylesheet" href="/Template/homestay/MyStyle/tiennghi.css">
     <link rel="stylesheet" href="/Template/homestay/MyStyle/tongquan.css">
+    <link rel="stylesheet" href="/Template/homestay/MyStyle/xem.css">
 </head>
 <body>
    
@@ -18,7 +19,7 @@
             <div class="img-ll">
                 <img src="/Image/homestay/hanoi/an's home/22.jpg" alt="">
             </div>
-            <button class="xem"><a href="#">xem tất cả ảnh</a></button>
+            <button class="xem"><a  href="/Views/homestay/xem.html" target="_blank" >xem tất cả ảnh</a></button>
         </div>
         <div class="img-mm">
             <div class="up">
@@ -26,10 +27,10 @@
                     <img src="/Image/homestay/hanoi/an's home/7.jpg" alt="">
                 </div>
                 <div class="img">
-                    <img src="/Image/homestay/hanoi/an's home/11.jpg" alt="">
+                    <img src="/Image/homestay/hanoi/an's home/15.jpg" alt="">
                 </div>
                 <div class="img">
-                    <img src="/Image/homestay/hanoi/an's home/12.jpg" alt="">
+                    <img src="/Image/homestay/hanoi/an's home/18.jpg" alt="">
                 </div>
             </div>
             <div class="down">
@@ -40,7 +41,7 @@
                     <img src="/Image/homestay/hanoi/an's home/2.jpg" alt="">
                 </div>
                 <div class="img">
-                    <img src="/Image/homestay/hanoi/an's home/8.jpg" alt="">
+                    <img src="/Image/homestay/hanoi/an's home/13.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -157,10 +158,20 @@
             </div>
             <div class="map">
               <button>tên khách sạn</button>
-              <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%C4%91%E1%BA%A1i%20h%E1%BB%8Dc%20giao%20th%C3%B4ng%20v%E1%BA%ADn%20t%E1%BA%A3i+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population calculator map</a></iframe></div>    </div>
-   
+              <div style="width: 100%">
+                <iframe 
+                  width="100%" 
+                  height="600" 
+                  frameborder="0" 
+                  scrolling="no" 
+                  marginheight="0" 
+                  marginwidth="0" 
+                  src="https://maps.google.com/maps?q=Hồ+Tây,+Hà+Nội,+Việt+Nam&hl=en&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+              </div>v   
 
         </div>
+    </div>
     </div>
     <div id="tiennghi">
         <div class="all">
@@ -287,19 +298,19 @@
             <div class="divice">
                 <div class="chia">
                     <span><img class="im" src="/Image/homestay/iconn/baby-boy.png" alt="">Trẻ sơ sinh 0-3 tuổi</span>
-                    <br><hr>
+                    <br><hr><br>
                     <p><b>Ở miễn phí nếu sử dụng giường có sẵn</b></p>
                     <p>Có thể yêu cầu nôi/cũi cho bé trực tiếp từ quầy lễ tân</p>
                 </div>
                 <div class="chia">
                     <span><img  class="im" src="/Image/homestay/iconn/boy.png" alt="">Trẻ em 4-12 tuổi</span>
-                    <br><hr>
+                    <br><hr><br>
                     <p><b>Ở miễn phí nếu sử dụng giường có sẵn</b></p>
                     <p>Nếu cần một giường phụ thì sẽ phụ thu thêm</p>
                 </div>
                 <div class="chia">
                     <span><img class="im" src="/Image/homestay/iconn/man.png" alt="">Khách từ trên 12 tuổi</span>
-                    <br><hr>
+                    <br><hr><br>
                     <p>Cần đặt thêm giường phụ và sẽ phụ thu thêm</p>
                 </div>
             </div>
@@ -314,12 +325,24 @@
             </div>
         </div>
     </div>
+    <div id="danhgia">
+        <h1>Đánh giá của khách hàng</h1>
+        <h2>xếp hạng &đánh giá chung </h2>
+        <h3>từ 90 đánh giá của khách đã ở</h3>
+        <div class="sau">
+            <div class="firstd">
+                
+            </div>
+            <div class="secondd"></div>
+            <div class="thirdd"></div>
+            <div class="fourd"></div>
+            <div class="fived"></div>
+        </div>
+    </div>
     <script>
         window.onscroll = function() {myFunction()};
-        
         var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        
+        var sticky = navbar.offsetTop;   
         function myFunction() {
           if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky")
@@ -327,13 +350,7 @@
             navbar.classList.remove("sticky");
           }
         }
-        document.getElementById("tongquan").addEventListener("click", function(event) {
-        event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
-
-        // Di chuyển trình duyệt đến phần tổng quan (ví dụ: phần có id là "overviewSection")
-        document.getElementById("overviewSection").scrollIntoView({ behavior: "smooth" });});
-
-    </script>
-   
+        
+    </script>  
 </body>
 </html>
