@@ -56,6 +56,9 @@ button.xem{
     right: 20px;
     bottom: 0;
 }
+button.xem a{
+    font-size: 30px;
+}
 .scroll{
     width: 100vw;
     overflow-y: scroll;
@@ -66,28 +69,29 @@ button.xem{
     justify-content: space-between;
     align-items: center;
 }
-ul #menu{
-   
-}
-ul{
+ul#menu{
     list-style-type: none;
     padding: 40px;
     background-color: white;
 }
-
-a{
-    text-decoration: none;
+ul#menu li a{
+    font-size: 30px;
+}
+div.diachi span a{
+    font-size: 30px;
+}
+div.firstr a{
     font-size: 30px;
 }
 p{
     font-size: 50px;
 }
-.sticky {
+/* .sticky {
     z-index: 100;
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 a:hover{
     color: blue;
 }
