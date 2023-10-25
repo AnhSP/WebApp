@@ -57,14 +57,14 @@ main{
 ul#menu-search a:hover{
     color: hotpink !important;
 }
-#HaiPhong{
-    background-image: url('/Image/web/haiphong2.jpg'); 
+#HaNoi{
+    background-image: url('/Image/web/hanoi1.jpeg'); 
     background-position: center;
     background-size: cover;
     margin: 10px;
 }
-#HaNoi{
-    background-image: url('/Image/web/hanoi1.jpeg'); 
+#HoChiMinh{
+    background-image: url('/Image/web/hcm1.jpg'); 
     background-position: center;
     background-size: cover;
     margin: 10px;
@@ -79,7 +79,7 @@ ul#menu-search a:hover{
     height: 100%;
 }   
 footer{
-    height: 50vh;
+    height: 50%;
 }
 img{
     height: 25vh !important;

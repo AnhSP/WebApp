@@ -8,12 +8,12 @@ window.addEventListener("load", function () {
   });
 })
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const homestayOption = document.querySelector("#homestay-option");
   const hotelOption = document.querySelector("#hotel-option");
 
   // Sự kiện click cho lựa chọn "Homestay"
-  homestayOption.addEventListener("click", function() {
+  homestayOption.addEventListener("click", function () {
     // Loại bỏ lớp CSS "selected" từ tất cả các lựa chọn
     hotelOption.classList.remove("selected");
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // Sự kiện click cho lựa chọn "Khách sạn"
-  hotelOption.addEventListener("click", function() {
+  hotelOption.addEventListener("click", function () {
     // Loại bỏ lớp CSS "selected" từ tất cả các lựa chọn
     homestayOption.classList.remove("selected");
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const ngayDi = document.querySelector("#ngay-di").value;
     const ngayVe = document.querySelector("#ngay-ve").value;
     const thanhPho = document.querySelector("#thanh-pho").value;
-    const selectedOption = document.querySelector(".selected").textContent.trim(); // Lựa chọn đã chọn
+    const selectedOption = document.querySelector(".selected").textContent.trim();// Lựa chọn đã chọn
 
     if (ngayDi && ngayVe && thanhPho !== "Thành phố") {
       // alert(`Tìm kiếm với ngày đi: ${ngayDi}, ngày về: ${ngayVe}, thành phố: ${thanhPho}`);
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "/Views/homestay/Homestay.html";
       } else if (selectedOption === "Khách sạn") {
         // Điều hướng đến trang khách sạn
-        window.location.href = "/Views/hotel/Hotel.html";
+        window.location.href = "/Views/Khach san/Khach san.html";
       }
     } else {
       alert("Vui lòng nhập đủ thông tin và chọn một lựa chọn.");

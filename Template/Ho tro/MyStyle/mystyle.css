@@ -23,25 +23,24 @@ a{
 }
 main{
     width: 100%;
-    height: 150vh;
-
+    height: 100%;
 }
 .navbar-toggler{
     justify-content: end;
     border: none !important;
 }
-#menu-search{
-    flex-direction:row;
-    align-items: start; 
-    justify-content: center;
-    width: 50%;
-}
-ul#menu-search a:hover{
-    color: hotpink !important;
+ul{
+    list-style-type: none;
 }
 .card-img-top{
     height: 100%;
 }   
 footer{
-    height: 50vh;
+    height: 50%;
+}
+div table{
+    margin-left: 6%;
+}
+div ul li:hover{
+    color: rgb(0, 0, 255) ;
 }

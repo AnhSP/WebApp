@@ -1,151 +1,207 @@
+<!-- File hỗ trợ minh làm -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trung tâm hỗ trợ</title>
+    <link rel="stylesheet" href="/Template/Ho tro/MyStyle/mystyle.css">
+    <link rel="stylesheet" href="/Template/Ho tro/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Template/Ho tro/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div style="background-color: rgb(91, 197, 255);">
-     <div style="text-align: center;">   
-        <h1>Bạn cần hỗ trợ ư?</h1>
-        <h3>Chúng tôi đến giúp quý khách đây!<h3>
+    <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark" id="nav"> <!-- Cụm menu -->
+        <div class="container-lg">
+            <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
+
+            <div class="navbar-toggler"> <!-- Menu trên đt -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="/Views/Login/login2.html"><i class="bx bxs-user mr-4"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu trên PC -->
+                <ul class="navbar-nav me-auto" id="menu">
+                    <li class="nav-item ">
+                        <a class="nav-link active menu-link" href="/Views/index.html" style="color: white;">Trang
+                            chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách sạn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/Views/homestay/Homestay.html"
+                            style="color: white;">Homestay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/Views/Ho tro/hotro.html" style="color: white;">Hỗ trợ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse"> <!-- Xác minh tài khoản -->
+                <li class="nav-item mx-1">
+                    <button class="nav-link btn btn-primary text-white">
+                        <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
+                    </button>
+                </li>
+            </ul>
         </div>
-        <h4>Những câu hỏi thường gặp</h4>
+    </nav>
+
+    <div style="background-color: rgb(91, 197, 255); padding: 10px;">
+        <div style="text-align: center;">
+            <h1>Bạn cần hỗ trợ ư?</h1>
+            <h3>Chúng tôi đến giúp quý khách đây!<h3>
+        </div>
+        <div class="container-md">
+            <h4 style="color: yellow;">Những câu hỏi thường gặp</h4>
+        </div>
     </div>
-    <div>
-    <th><div class="header">
-        <h2>Chi tiết đặt chỗ</h2>
-        <li>Làm thế nào tôi có được thêm thông tin về phòng hoặc cơ sở vật chất của chỗ nghỉ?</li>
-        <li>Khi nào tôi có thư điện tử xác nhận?</li>
-        <li>Tôi có thể kiểm tra chi tiết và trạng thái đặt phòng của mình ở đâu?</li>
-        <li>Khách sạn cung cấp đưa đón sân bay không?</li>
-        <li>Giá phòng gồm cả bữa sáng chưa?</li>
-        <li>Tôi chưa nhận được xác nhận đặt chỗ và không thể xác định vị trí đơn đặt chỗ của mình trực tuyến.</li>
-        <li>Tôi có thể chọn loại giường nào tôi muốn chứ?</li>
-        <li>Làm sao tôi có thể gửi xác nhận đặt phòng tới địa chỉ thư điện tử khác với địa chỉ tôi đã sử dụng để đặt phòng?</li>
+    <div class="container-md">
+        <th>
+            <div class="header">
+                <h2>Chi tiết đặt chỗ</h2>
+                <ul>
+                    <li>Làm thế nào tôi có được thêm thông tin về phòng hoặc cơ sở vật chất của chỗ nghỉ?</li>
+                    <li>Khi nào tôi có thư điện tử xác nhận?</li>
+                    <li>Tôi có thể kiểm tra chi tiết và trạng thái đặt phòng của mình ở đâu?</li>
+                    <li>Khách sạn cung cấp đưa đón sân bay không?</li>
+                    <li>Giá phòng gồm cả bữa sáng chưa?</li>
+                    <li>Tôi chưa nhận được xác nhận đặt chỗ và không thể xác định vị trí đơn đặt chỗ của mình trực
+                        tuyến.</li>
+                    <li>Tôi có thể chọn loại giường nào tôi muốn chứ?</li>
+                    <li>Làm sao tôi có thể gửi xác nhận đặt phòng tới địa chỉ thư điện tử khác với địa chỉ tôi đã sử
+                        dụng để đặt phòng?</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="header">
+                <h2>Hủy bỏ</h2>
+                <ul>
+                    <li>Làm thế nào tôi có thể hủy phòng của mình?</li>
+                    <li>Làm sao tôi biết việc đặt phòng của mình đã bị hủy bỏ hãy chưa?</li>
+                    <li>Tôi sẽ bị tính phí nếu tôi hủy phòng của mình chứ?</li>
+                    <li>Tôi có thể tìm chính sách hủy ở đâu?</li>
+                    <li>Bao lâu tôi sẽ nhận lại tiền của mình?</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="header">
+                <h2>Thay đổi về việc đặt chỗ</h2>
+                <ul>
+                    <li>Tôi muốn thay đổi ngày đặt phòng của mình. Làm sao tôi có thể làm vậy?</li>
+                    <li>Tôi muốn thay đổi tên của khách chính. Làm sao tôi có thể làm vậy?</li>
+                    <li>Làm thế nào để tôi kéo dài thời gian ở?</li>
+                    <li>Làm thế nào để tôi rút ngắn thời gian ở?</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="header">
+                <h2>Yêu cầu đặc biệt</h2>
+                <ul>
+                    <li>Làm thế nào tôi có thể đưa ra một yêu cầu đặc biệt?</li>
+                    <li>Làm thế nào thì tôi sẽ biết là một yêu cầu đặc biệt được xác nhận?</li>
+                    <li>Tôi có được yêu cầu nhận phòng sớm/trả phòng muộn không?</li>
+                    <li>Tôi có thể chọn loại giường tôi muốn, yêu cầu phòng hút thuốc hoặc cấm hút thuốc, hoặc yêu cầu
+                        phòng nối liền nhau chứ?</li>
+                </ul>
+            </div>
+            <hr>
+            <div style=" background-color: rgb(194, 192, 192);">
+                <table class="justify-content-center align-content-center">
+                    <tr>
+                        <th class="col-3">Trợ giúp</th>
+                        <th class="col-3">Công ty</th>
+                        <th class="col-3">Điểm du lịch</th>
+                        <th class="col-3">Tải ứng dụng</th>
+                    </tr>
+                    <tr>
+                        <th class="col-3">Trung tâm hỗ trợ</th>
+                        <th class="col-3">Về chúng tôi</th>
+                        <th class="col-3">Quốc gia</th>
+                        <th class="col-3">Ứng dụng IOS</th>
+                    </tr>
+                    <tr>
+                        <th class="col-3">Câu hỏi thường gặp</th>
+                        <th class="col-3">Tuyển dụng</th>
+                        <th class="col-3">Thành phố</th>
+                        <th class="col-3">Ứng dụng Android</th>
+                    </tr>
+                    <tr>
+                        <th class="col-3">Chính sách bảo mật</th>
+                        <th class="col-3">Báo chí</th>
+                    </tr>
+                    <tr>
+                        <th class="col-3">Chính sách về cookie</th>
+                        <th class="col-3">Nhật kí mạng</th>
+                    </tr>
+                    <tr>
+                        <th class="col-3">Điều khoản sử dụng</th>
+                    </tr>
+                    <tr>
+                        <th class="col-3">Quản lý thiết lập cookie</th>
+                    </tr>
+                </table>
+            </div>
+            <hr>
     </div>
-    <hr>
-    <div class="header">
-        <h2>Hủy bỏ</h2>
-        <li>Làm thế nào tôi có thể hủy phòng của mình?</li>
-        <li>Làm sao tôi biết việc đặt phòng của mình đã bị hủy bỏ hãy chưa?</li>
-        <li>Tôi sẽ bị tính phí nếu tôi hủy phòng của mình chứ?</li>
-        <li>Tôi có thể tìm chính sách hủy ở đâu?</li>
-        <li>Bao lâu tôi sẽ nhận lại tiền của mình?</li>
-    </div>
-    <hr>
-    <div class="header">
-        <h2>Thay đổi về việc đặt chỗ</h2>
-        <li>Tôi muốn thay đổi ngày đặt phòng của mình. Làm sao tôi có thể làm vậy?</li>
-        <li>Tôi muốn thay đổi tên của khách chính. Làm sao tôi có thể làm vậy?</li>
-        <li>Làm thế nào để tôi kéo dài thời gian ở?</li>
-        <li>Làm thế nào để tôi rút ngắn thời gian ở?</li>
-    </div>
-    <hr>
-    <div class="header">
-        <h2>Yêu cầu đặc biệt</h2>
-        <li>Làm thế nào tôi có thể đưa ra một yêu cầu đặc biệt?</li>
-        <li>Làm thế nào thì tôi sẽ biết là một yêu cầu đặc biệt được xác nhận?</li>
-        <li>Tôi có được yêu cầu nhận phòng sớm/trả phòng muộn không?</li>
-        <li>Tôi có thể chọn loại giường tôi muốn, yêu cầu phòng hút thuốc hoặc cấm hút thuốc, hoặc yêu cầu phòng nối liền nhau chứ?</li>
-    </div>
-    <hr>
-    <div style="text-align: center; background-color: rgb(194, 192, 192);">
-    <table>
-        <tr>
-            <th>Trợ giúp</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-<th>Công ty</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th>Điểm du lịch</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th>Tải ứng dụng</th>
-        </tr>
-        <tr>
-            <th><i>Trung tâm hỗ trợ</i></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><i>Về chúng tôi</i></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><i>Quốc gia</i></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><i>Ứng dụng IOS</i></th>
-        </tr>
-        <tr>
-            <th><i>Câu hỏi thường gặp</i></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><i>Tuyển dụng</i></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><i>Thành phố</i></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><i>Ứng dụng Android</i></th>
-        </tr>
-        <tr>
-            <th><i>Chính sách bảo mật</i></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><i>Báo chí</i></th>
-        </tr>
-        <tr>
-            <th><i>Chính sách về cookie</i></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th><i>Nhật kí mạng</i></th>
-        </tr>
-        <tr>
-            <th>Điều khoản sử dụng</th>
-        </tr>
-        <tr>
-            <th>Quản lý thiết lập cookie</th>
-        </tr>
-    </table>
-    </div>
-    <hr>
-    <div>
-        
-    </div>
-    </div>
+
+    <footer class="bg-black text-white text-center p-4"> <!-- Phần dưới cùng -->
+        <div class="row" style="margin: 0px;">
+            <div class="col-4">
+                <h3>Thành viên</h3>
+                <ul style="list-style: none">
+                    <li>Lê Thị Quỳnh Anh</li>
+                    <li>Nguyễn Đắc Anh</li>
+                    <li>Nguyễn Mạnh Hùng</li>
+                    <li>Vũ Ngọc Minh</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>Thông tin liên hệ</h3>
+                <ul style="list-style: none">
+                    <li>
+                        <a href="https://www.facebook.com/blader.buster.9" style="color: white;">
+                            <i class="fa-brands fa-facebook" style="color: #0561ff;"></i></i>Quỳnh Anh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC8vmMGd34GkBUZ_KodSG6XQ" style="color: white;">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>Đắc Anh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" style="color: white;">
+                            <i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>Mạnh Hùng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" style="color: white;">
+                            <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Ngọc Minh
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>Trợ giúp</h3>
+                <a href="/Views/Ho tro/hotro.html" style="color: white;">Trung tâm trợ giúp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Khai báo các js -->
+    <script src="/Template/Ho tro/MyJavaScript/myscript.js"></script>
+    <script src="/Template/Ho tro/Jquery/jquery-3.7.1.min.js"></script>
+    <script src="/Template/Ho tro/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="/Template/Ho tro/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
