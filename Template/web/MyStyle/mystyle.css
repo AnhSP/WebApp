@@ -31,7 +31,8 @@ a{
     text-decoration: none;
 }
 main{
-    height: 150vh;
+    height: 100%;
+    padding-bottom: 50px;
 }
 #khung-search{
     margin-top: 100px;
@@ -78,4 +79,8 @@ ul#menu-search a:hover{
 }   
 footer{
     height: 50vh;
+}
+img{
+    height: 25vh !important;
+    width: 35vh !important;
 }
