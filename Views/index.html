@@ -67,12 +67,12 @@
         <!-- Chọn homestay hoặc khách sạn -->
         <ul class="navbar-nav" id="menu-search">
           <li class="nav-item mx-1">
-            <a class="nav-link" style="font-size: large; color: black" href="#" onclick="">
+            <a id="homestay-option" class="nav-link" style="font-size: large; color: black" href="#" >
               <i class="fa-solid fa-house"></i>Homestay
             </a>
           </li>
           <li class="nav-item mx-1">
-            <a class="nav-link" style="font-size: large; color: black" href="#" onclick="">
+            <a id="hotel-option" class="nav-link"  style="font-size: large; color: black" href="#">
               <i class="fa-solid fa-hotel"></i>Khách sạn
             </a>
           </li>
@@ -110,9 +110,9 @@
             </span>
           </div>
         </div>
-
+        <!-- onclick="search() -->
         <div class="col-sm-3">
-          <button class="btn btn-primary" style="height: 40px; width: 40px;" type="button" onclick="search()"> <!-- Nút tìm kiếm -->
+          <button id="search-button" class="btn btn-primary" style="height: 40px; width: 40px;" type="button" "> <!-- Nút tìm kiếm -->
             <i class="bi bi-search"></i>
           </button>
         </div>

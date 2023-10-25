@@ -40,9 +40,10 @@ main{
     background: none;
     background: rgb(255,255,255,.6);
 }
-/* #nutxuong{
-    right: 30px;
-} */
+.selected {
+    background-color: #FF5733; /* Màu nổi khi được chọn */
+    color: white; /* Màu chữ khi được chọn */
+}
 .navbar-toggler{
     justify-content: end;
     border: none;
