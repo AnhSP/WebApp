@@ -91,7 +91,7 @@
 
         <div class="col-sm-3"> <!--Chọn ngày đén  -->
           <div class="date input-group  datepicker" style="width: 90%;">
-            <input class="form-control" type="text" placeholder="Chọn ngày đi">
+            <input id="ngay-di" class="form-control" type="text" placeholder="Chọn ngày đi">
             <span class="input-group-append">
               <span class="input-group-text bg-white d-block">
                 <i class="fa-solid fa-calendar-days" style="color: #020203;"></i>
@@ -102,7 +102,7 @@
 
         <div class="col-sm-3"> <!--Chọn ngày về  -->
           <div class="date input-group  datepicker" style="width: 90%;">
-            <input class="form-control" type="text" placeholder="Chọn ngày về">
+            <input id="ngay-ve" class="form-control" type="text" placeholder="Chọn ngày về">
             <span class="input-group-append">
               <span class="input-group-text bg-white d-block">
                 <i class="fa-solid fa-calendar-days" style="color: #020203;"></i>
@@ -112,7 +112,7 @@
         </div>
 
         <div class="col-sm-3">
-          <button class="btn btn-primary" style="height: 40px; width: 40px;" type="button"> <!-- Nút tìm kiếm -->
+          <button class="btn btn-primary" style="height: 40px; width: 40px;" type="button" onclick="search()"> <!-- Nút tìm kiếm -->
             <i class="bi bi-search"></i>
           </button>
         </div>
@@ -172,7 +172,7 @@
 
   <footer class="bg-black text-white text-center p-5"> <!-- Phần dưới cùng -->
     <div class="row" style="margin: 0px;">
-      <div class="col-sm-4">
+      <div class="col-4">
         <h3>Thành viên</h3>
         <ul style="list-style: none">
           <li>Lê Thị Quỳnh Anh</li>
@@ -181,7 +181,7 @@
           <li>Vũ Ngọc Minh</li>
         </ul>
       </div>
-      <div class="col-sm-4">
+      <div class="col-4">
         <h3>Thông tin liên hệ</h3>
         <ul style="list-style: none">
           <li>
@@ -206,7 +206,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-sm-4">
+      <div class="col-4">
         <h3>Trợ giúp</h3>
         <a href="/Views/Ho tro/hotro.html" style="color: white;">Trung tâm trợ giúp</a>
       </div>
