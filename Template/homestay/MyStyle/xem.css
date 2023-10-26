@@ -33,13 +33,13 @@
     flex-direction: column;
     width: 32%;
     border-radius: 5px;
-    margin: 10px;
+    margin: 15px;
 }
  img{
  width: 100%;
  height: auto;
  border-radius: 5px;
- margin: 10px;
+ margin: 15px;
  transition: .5s;
 }
 img:hover {

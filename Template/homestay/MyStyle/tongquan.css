@@ -1,5 +1,6 @@
 #tongquan{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 .left{
@@ -8,9 +9,7 @@
 }.right{
     width: 35%;
 }
-.one{
-    width: 100%;
-}
+
 .sao img{
     height: 20px;
     width: 20px;
@@ -19,7 +18,7 @@ img.anh{
     height: 30px;
     width: 30px;
 }
-.one,.two,.three,.firstr,.map{
+.onee,.two,.three,.firstr,.map{
     border-radius: 10px ;
     border: 2px solid rgb(74, 72, 70);
     margin: 20px;
@@ -41,7 +40,7 @@ button.nho{
     font-size: 18px;
     border-radius: 5px;
 }
-.one,.two,.three{
+.onee,.two,.three{
     padding: 20px;
 }
 .threed{

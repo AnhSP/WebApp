@@ -16,7 +16,7 @@ ul#main-menu a:hover::after{
     /* transform: translateX(100%); */
 }
 ul#main-menu a:hover{
-    color: yellow !important;
+   color: yellow !important;
 }
 a{
     text-decoration: none !important;

@@ -16,13 +16,9 @@
     <link rel="stylesheet" href="/Template/homestay/bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Template/homestay/fontawesome-free-6.4.2-web/css/all.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-</head>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wXW7G1sXksnyhb1xyQAN0umHTjQP2lucYmFzCGcBdFQBV0zVZrkvtQS0H941EC-ThsxAe9Ya4hVRDkO1vWoiVvxE-kGXnRc94T9LzPYHPvSR8HTQpIhpwbgoJGRWn1UpmnvRCgPgmkOUMSUNiCXGnJgcDMiot5lzTaWcBAC91HrwrZH_P4p5JpqWuthvkQ9v96AqvCZd4-96YO3HGWHc-5GaBMMb2bz_TCKCGwBRtiuU-papMNdnGJznpMQYRXahRa1Yrh_cvPR9He0qB9RDVY_jdVuFgpEvspPhptnrW61lbq-UGLXv9nxakHipzSggtOqFun3Q8qQOJ8CjycG-N9YF5Lv4-RrgKe8oRjfPPTByQm3kojm863MZ4WCvbGzFTqvebwkUzU4AF_mW6HtbmhmwM4nmQTvm8AvQ7_uPhtQ-2IFNEQZ4VhkGxSUqIqVG0k5FwVWiXZbYfP7PB-of_c2pfbPRtvsPpTtMm4ViblLcdLBlLrjU56TJNfxfHIpb" charset="UTF-8"></script></head>
 <body>
-<<<<<<< HEAD
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="nav"> <!-- Cụm menu
-=======
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="nav"> <!-- Cụm menu -->
->>>>>>> 98c8839cf3c9e413b11021970ecee080979017f1
         <div class="container-lg">
             <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
     
@@ -94,23 +90,19 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <div id="navbar" class="sticky-top ">
-=======
-    <div id="navbar" class="sticky-top">
->>>>>>> 98c8839cf3c9e413b11021970ecee080979017f1
         <ul id="menu" >
-            <li><a href="">Tổng quan</a></li>
-            <li><a href="">Phòng </a></li>
-            <li><a href="">Tiện nghi</a></li>
-            <li><a href="">Đánh giá</a></li>
-            <li><a href="">Chính sách</a></li>
+            <li><a href="#tongquan">Tổng quan</a></li>
+            <li><a href="#phong">Phòng </a></li>
+            <li><a href="#tiennghi">Tiện nghi</a></li>
+            <li><a href="#danhgia">Đánh giá</a></li>
+            <li><a href="#chinhsach">Chính sách</a></li>
             
         </ul>
     </div>
     <div id="tongquan">
         <div class="left">
-            <div class="one">
+            <div class="onee">
                 <div class="dau">
                     <button class="nho">peakdays</button>
                     <button class="nho">Toàn bộ căn hộ</button>
@@ -134,9 +126,7 @@
                 <p>sàm lol về khách sạn nha
                     Hãy để chuyến đi của quý khách có một khởi đầu tuyệt vời khi ở lại khách sạn này, nơi có Wi-Fi miễn phí trong tất cả các phòng. Nằm ở vị trí trung tâm tại Quận 3 của Hồ Chí Minh, chỗ nghỉ này đặt quý khách ở gần các điểm thu hút và tùy chọn ăn uống thú vị. Đừng rời đi trước khi ghé thăm Bảo tàng Chứng tích chiến tranh nổi tiếng. Được xếp hạng 4 sao, chỗ nghỉ chất lượng cao này cho phép khách nghỉ sử dụng bể bơi ngoài trời, xông khô và phòng tập ngay trong khuôn viên.
     
-                </p>
-                
-    
+                </p> 
             </div>
             <div class="two">
                 <h3>Điểm nổi bật</h3>
@@ -456,7 +446,7 @@
         event.preventDefault();
 
         const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(tongquan);
+        const targetElement = document.querySelector(targetId);
 
         window.scrollTo({
             top: targetElement.offsetTop,
