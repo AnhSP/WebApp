@@ -39,14 +39,57 @@ main{
 ul#menu-search a:hover{
     color: hotpink !important;
 }
+div.text-center a:hover{
+    color: red;
+}
 .card-img-top{
     height: 100%;
 }   
 footer{
     height: 50%;
 }
+.card{
+    margin: 10px;
+}
 img.card-img-top{
     height: 25vh !important;
     width: 35vh !important;
+}
+
+/* Ẩn giao diện desktop trên điện thoại */
+@media screen and (max-width: 768px) {
+    .desktop-row {
+      display: none;
+    }
+  }
+  
+  /* Ẩn giao diện mobile trên desktop */
+  @media screen and (min-width: 769px) {
+    .mobile-row {
+      display: none;
+    }
+  }
+
+/* Làm nổi 3D các khách sạn */
+/* .hotel-card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.hotel-card:hover {
+    transform: translateZ(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} */
+
+/* Làm nổi 3D các khách sạn + Áp dụng cho jquery */
+.hotel-card {
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.hotel-card:hover {
+    transform: translateY(-10px);
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 

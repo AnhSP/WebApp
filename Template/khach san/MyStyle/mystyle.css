@@ -39,6 +39,9 @@ main{
 ul#menu-search a:hover{
     color: hotpink !important;
 }
+div.text-center a:hover{
+    color: red;
+}
 .card-img-top{
     height: 100%;
 }   
@@ -68,4 +71,27 @@ img.card-img-top{
       display: none;
     }
   }
+
+/* Làm nổi 3D các khách sạn */
+/* .hotel-card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.hotel-card:hover {
+    transform: translateZ(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} */
+
+/* Làm nổi 3D các khách sạn + Áp dụng cho jquery */
+.hotel-card {
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.hotel-card:hover {
+    transform: translateY(-10px);
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
