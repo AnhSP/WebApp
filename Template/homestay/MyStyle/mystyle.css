@@ -55,7 +55,6 @@ img.card-img-top{
     height: 25vh !important;
     width: 35vh !important;
 }
-
 /* Ẩn giao diện desktop trên điện thoại */
 @media screen and (max-width: 768px) {
     .desktop-row {
