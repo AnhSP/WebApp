@@ -85,3 +85,18 @@ img{
     height: 25vh !important;
     width: 35vh !important;
 }
+.card-3D {
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.card-3D:hover {
+    transform: translateY(-10px);
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Ẩn lời chào của điện thoại khi đang ở chế độ laptop */
+@media (min-width: 769px) {
+    #welcome-user-phone {
+      display: none !important;
+    }
+}  

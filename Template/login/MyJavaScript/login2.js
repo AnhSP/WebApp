@@ -13,11 +13,26 @@ function checkLoginForm() {
     var username = document.getElementById("login-username").value;
     var password = document.getElementById("login-password").value;
 
+    // Lấy thông tin tài khoản từ localStorage
+    var savedUsername = localStorage.getItem("username");
+    var savedPassword = localStorage.getItem("password");
+
     if (username === "" || password === "") {
         document.getElementById("login-username-error").innerText = username === "" ? "Vui lòng nhập tên đăng nhập" : "";
         document.getElementById("login-password-error").innerText = password === "" ? "Vui lòng nhập mật khẩu" : "";
         return false;
     }
+    if (username === savedUsername && password === savedPassword) {
+        // Lưu trạng thái đăng nhập
+        localStorage.setItem("userLoggedIn", "true");
+
+        // Chuyển hướng sang trang chủ
+        window.location.href = "/Views/index.html";
+        return false;
+    } else {
+        alert(`Tên đăng nhập hoặc mật khẩu không đúng`);
+    }
+
 }
 
 function checksignupForm() {
@@ -39,17 +54,33 @@ function checksignupForm() {
         return false;
     }
     var isChecked = document.getElementById("argree").checked;
-    
+
     if (!isChecked) {
         document.getElementById("needed").innerText = "Bạn cần đồng ý với điều khoản!";
         return false;
     } else {
+        // alert(` tk: ${username} mail: ${email} mk: ${password}`);
         document.getElementById("needed").innerText = "";
-        return true;
+        signup();
+        // return true;
     }
 }
 
+// Đăng ký
+function signup() {
+    var username = document.getElementById("signup-fullname").value;
+    var email = document.getElementById("signup-email").value;
+    var password = document.getElementById("signup-password").value;
 
+    // alert(` tk: ${username} mail: ${email} mk: ${password}`);
 
+    // Lưu tài khoản vào localStorage
+    localStorage.setItem("username", username);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+    alert(`Chúc mừng bạn đã đăng ký thành công`);
+    // Chuyển hướng về trang đăng nhập
+    showLoginForm();
+    return false; // Ngăn form được submit
 
-  
+}
