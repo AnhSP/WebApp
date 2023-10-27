@@ -9,6 +9,16 @@
 }.right{
     width: 35%;
 }
+button.xem,button.datp{
+    border-radius: 5px;
+
+}
+button.datp{
+    right:25px;
+}
+button.xem,button.datp:hover{
+    background-color: aqua;
+}
 .sao img{
     height: 20px;
     width: 20px;
@@ -17,7 +27,7 @@ img.anh{
     height: 30px;
     width: 30px;
 }
-.onee,.two,.three,.firstr,.map{
+.onee,.twoo,.threee,.firstr,.map{
     border-radius: 10px ;
     border: 2px solid rgb(74, 72, 70);
     margin: 20px;
@@ -39,7 +49,7 @@ button.nho{
     font-size: 18px;
     border-radius: 5px;
 }
-.onee,.two,.three{
+.onee,.twoo,.threee{
     padding: 20px;
 }
 .threed{

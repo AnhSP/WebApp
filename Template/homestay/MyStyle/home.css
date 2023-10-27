@@ -75,8 +75,13 @@ ul#menu{
     background-color: rgb(65, 222, 224);
 }
 ul#menu li a{
-    font-size: 30px;
+    font-size: 25px;
 
+}
+h2.cach
+{
+    font-size: 700;
+    margin: 20px
 }
 div.diachi span a{
     font-size: 30px;

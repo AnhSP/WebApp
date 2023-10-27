@@ -14,44 +14,56 @@
 <body>
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark" id="nav"> <!-- Cụm menu -->
         <div class="container-lg">
-            <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
-
-            <div class="navbar-toggler"> <!-- Menu trên đt -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="/Views/Login/login2.html"><i class="bx bxs-user mr-4"></i></a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu trên PC -->
-                <ul class="navbar-nav me-auto" id="main-menu">
-                    <li class="nav-item ">
-                        <a class="nav-link active menu-link" href="/Views/index.html" style="color: white;">Trang
-                            chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách sạn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="/Views/homestay/Homestay.html"
-                            style="color: white;">Homestay</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="/Views/Ho tro/ttht.html" style="color: white;">Hỗ trợ</a>
-                    </li>
-                </ul>
-            </div>
-
-            <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse"> <!-- Xác minh tài khoản -->
-                <li class="nav-item mx-1">
-                    <button class="nav-link btn btn-primary text-white">
-                        <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
-                    </button>
-                </li>
+          <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
+    
+          <div class="navbar-toggler"> <!-- Menu trên đt -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Đăng nhập trên điện thoại -->
+            <a id="login-button-phone" style="display: inline-block;" href="/Views/Login/login2.html"><i
+                class="bx bxs-user mr-4"></i></a>
+            <!-- Đăng xuất trên điện thoại -->
+            <button onclick="logout()" style="display: none;" id="logout-button-phone">
+              <i class="bx bxs-user-minus mr-4"></i>
+            </button>
+          </div>
+    
+          <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu trên PC -->
+            <ul class="navbar-nav me-auto" id="menu">
+              <li class="nav-link" id="welcome-user-phone" style="display: none; color: white;">
+                <p class="text-end" style="margin: 0px;">Xin chào, <span id="user-greeting-phone"></span></p>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active menu-link" href="/Views/index.html" style="color: white;">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách sạn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="/Views/homestay/Homestay.html" style="color: white;">Homestay</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="/Views/Ho tro/ttht.html" style="color: white;">Hỗ trợ</a>
+              </li>
             </ul>
+          </div>
+    
+          <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse"> <!-- Xác minh tài khoản -->
+            <li class="nav-item mx-1">
+            <li class="nav-link" id="welcome-user" style="display: none; color: white;">
+              <p style="margin: 0px;">Xin chào, <span id="user-greeting"></span></p>
+            </li>
+            <button class="nav-link btn btn-primary text-white" onclick="logout()" style="display: none;"
+              id="logout-button">Đăng xuất</button>
+            <button class="nav-link btn btn-primary" id="login-button">
+              <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
+            </button>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
 
     <main>
         <div class="container" style="width: 100%; height: 100%;">
@@ -278,241 +290,64 @@
         </div>
     </main>
 
-    <!-- <div style="width: 80%; margin: 0 auto;">
-        <div style="text-align: center;">
-            <h2>Những chỗ nghỉ nổi bật được đề xuất cho quý khách:</h2>
-            <table border="0" cellspacing="0">
-                <tr>
-                    <th><a href="#">Hồ Chí Minh</a></th>
-
-                    <th><a href="#">Hà Nội</a></th>
-
-                    <th><a href="#">Vũng Tàu</a></th>
-
-                    <th><a href="#">Đà Nẵng</a></th>
-                    <th><a href="#">Đà Lạt</a></th>
-                </tr>
-                <tr>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/22423667/-1/c8b11fd11884172c23959f0ccb4ebfc0.jpg?ca=19&ce=1"
-                                alt="">
-                            <h3></h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 784.000</ul>
-                        </button>
-                    </th>
-
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/28529139/-1/fa4e6b959333cc7e1406f937f36cb41b.jpg?ca=27&ce=0"
-                                alt="">
-                            <h3>Fracer Residence Hà Nội</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 1.853.000</ul>
-                        </button>
-                    </th>
-
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://q-xx.bstatic.com/xdata/images/hotel/max500/384697267.jpg?k=3c040f389727ae1652ad3b5c2a05cc137189bfc752c2bf71aa4eee90ff6f0991&o="
-                                alt="">
-                            <h3>Yubi Villa Vung Tau Near Beach</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 7.407.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/23168138/328908056/bcbc05be111ee21b734332b297089ccb.jpg?ca=18&ce=1"
-                                alt="">
-                            <h3>Harmony Homestay</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 273.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/39580999/-1/460f20a768a55e534f3c145eb4af0be6.jpg?ce=0"
-                                alt="">
-                            <h3>Doi Mo Homestay & Camping</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 257.000</ul>
-                        </button>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/161/16138932/16138932_20070716490091376123.jpg?ca=12&ce=1"
-                                alt="">
-                            <h3>Cozrum Homes Saphera Residence</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 397.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/30227826/-1/4d04c760cb1931ac88330fdc05495ec2.jpg?ca=28&ce=0"
-                                alt="">
-                            <h3>The Euphoria Hanoi</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 788.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://q-xx.bstatic.com/xdata/images/hotel/max500/414439938.jpg?k=a2f5683a25c24b49dfc526393a758aa77e45fd0687072ed0b444389eb7592226&o="
-                                alt="">
-                            <h3>Can ho Studio The Song Vung Tau</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 388.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/7243073/-1/2c23bff22987ee68884d4f4996df672a.png?ca=9&ce=1"
-                                alt="">
-                            <h3>SALA DA NANG BEACH HOTEL</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 2.389.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://q-xx.bstatic.com/xdata/images/hotel/max500/411962877.jpg?k=e8cdcc7dc0b2d600258b615947ab82306a040a63d2a6f3031c310d22b564dae0&o="
-                                alt="">
-                            <h3>VILLA MAISON DE SUNNY</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 11.948.000</ul>
-                        </button>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/28445719/-1/72042261901c048af5863ea33acbc3b9.jpg?ca=23&ce=0"
-                                alt="">
-                            <h3>LuxHomes Saigon - Vinhomes Central Park</h3>
-                            <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 899.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/34729716/-1/ee66846abd7342ff5be949276f99092f.jpg?ce=0"
-                                alt="">
-                            <h3>Vinahomes Dcapitale-Luka homes</h3>
-                            <i>Giá mỗi đêm rẻ từ</i>
-                            <ul style="color: red;" class="text-end">VND 878.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://q-xx.bstatic.com/xdata/images/hotel/max500/436676357.jpg?k=13c5417444efbc0175bceb70026705c6dea17f156c9bb9e592c9fd501bef22d4&o="
-                                alt="">
-                            <h3>Ruby Villa D4-Sea View-Lying By The Sea</h3>
-                            <i>Giá mỗi đêm rẻ từ</i>
-                            <ul style="color: red;" class="text-end">VND 9.191.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://q-xx.bstatic.com/xdata/images/hotel/max500/175083261.jpg?k=df7e24c5750569beca55d0097b8b3d923faa954819fc917d3e57ea18b68ae044&o="
-                                alt="">
-                            <h3>Siro House Da Nang Homestay</h3>
-                            <i>Giá mỗi đêm rẻ từ</i>
-                            <ul style="color: red;" class="text-end">VND 239.000</ul>
-                        </button>
-                    </th>
-                    <th>
-                        <button><img width="200px" height="150px"
-                                src="https://pix8.agoda.net/hotelImages/36702785/-1/b5200cce24f20841c620f0c10a0cc695.jpg?ce=0"
-                                alt="">
-                            <h3>Chiu Home Dalat</h3>
-                            <i>Giá mỗi đêm rẻ từ</i>
-                            <ul style="color: red;" class="text-end">VND 343.000</ul>
-                        </button>
-                    </th>
-                </tr>
-            </table> -->
 
     <hr>
-    <div style="width: 80%; margin: 0 auto;">
-        <div style="text-align: center;">
-            <h2>Tiếng lành đồn xa</h2>
-            <table border="0" cellspacing="0">
-                <tr>
-                    <th><button style="background-color: rgb(204, 201, 196);">
-                            <h3>The Euphoria Hanoi</h3>
-                            <h4>Giá cả rất phải chăng .Đúng là một món hời!</h4>
-                            <li>Bellarmine đến từ Philippines</li>
-                        </button>
-                    </th>
-                    <th><button style="background-color: rgb(204, 201, 196);">
-                            <h3>Doi Mo Homestay & Camping</h3>
-                            <h4>Quả là một trải nghiệm suôn sẻ và đáng nhớ.</h4>
-                            <li>Kewal đến từ Ấn Độ</li>
-                        </button>
-                    </th>
-                    <th><button style="background-color: rgb(204, 201, 196);">
-                            <h3>Nikko Hotel - The Classy Life</h3>
-                            <h4>vị trí khách sạn này rất phù hợp, thuận tiện cho chúng tôi.Giá cả cũng rất tuyệt
-                                vời</h4>
-                            <li>Diane đến từ Hoa Kỳ</li>
-                        </button>
-                    </th>
-                </tr>
-            </table>
-        </div>
-        <hr>
-    </div>
+ <h2>Giá cả tốt nhất</h2>
+
     </div>
     </div>
 
 
     <footer class="bg-black text-white text-center p-4"> <!-- Phần dưới cùng -->
         <div class="row" style="margin: 0px;">
-            <div class="col-4">
-                <h3>Thành viên</h3>
-                <ul style="list-style: none">
-                    <li>Lê Thị Quỳnh Anh</li>
-                    <li>Nguyễn Đắc Anh</li>
-                    <li>Nguyễn Mạnh Hùng</li>
-                    <li>Vũ Ngọc Minh</li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <h3>Thông tin liên hệ</h3>
-                <ul style="list-style: none">
-                    <li>
-                        <a href="https://www.facebook.com/blader.buster.9" style="color: white;">
-                            <i class="fa-brands fa-facebook" style="color: #0561ff;"></i></i>Quỳnh Anh
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UC8vmMGd34GkBUZ_KodSG6XQ" style="color: white;">
-                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>Đắc Anh
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" style="color: white;">
-                            <i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>Mạnh Hùng
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" style="color: white;">
-                            <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Ngọc Minh
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <h3>Trợ giúp</h3>
+          <div class="col-4">
+            <h3>Thành viên</h3>
+            <ul style="list-style: none">
+              <li>Lê Thị Quỳnh Anh</li>
+              <li>Nguyễn Đắc Anh</li>
+              <li>Nguyễn Mạnh Hùng</li>
+              <li>Vũ Ngọc Minh</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>Thông tin liên hệ</h3>
+            <ul style="list-style: none">
+              <li>
+                <a href="https://www.facebook.com/blader.buster.9" style="color: white;">
+                  <i class="fa-brands fa-facebook" style="color: #0561ff;"></i></i>Quỳnh Anh
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC8vmMGd34GkBUZ_KodSG6XQ" style="color: white;">
+                  <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>Đắc Anh
+                </a>
+              </li>
+              <li>
+                <a href="" style="color: white;">
+                  <i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>Mạnh Hùng
+                </a>
+              </li>
+              <li>
+                <a href="" style="color: white;">
+                  <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Ngọc Minh
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>Trợ giúp</h3>
+            <ul style="list-style: none">
+              <li>
                 <a href="/Views/Ho tro/ttht.html" style="color: white;">Trung tâm trợ giúp</a>
-            </div>
+              </li>
+              <li>
+                <button id="delete-account-button" class="btn btn-danger" onclick="deleteAccount()" style="margin: 5px;">Xóa
+                  tài khoản</button>
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </footer>
 
     <!-- Khai báo các js -->
     <script src="/Template/khach san/MyJavaScript/myscript.js"></script>
@@ -521,6 +356,7 @@
     <script src="/Template/khach san/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="/Template/login/MyJavaScript/common.js"></script>
 </body>
 
 </html>

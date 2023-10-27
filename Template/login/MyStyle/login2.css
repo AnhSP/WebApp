@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
-    background: linear-gradient(red,blue,yellow);
+    background: url("/Image/homestay/hanoi/an's home/1.jpg")
   
 }
 
@@ -22,7 +22,7 @@ body {
     background:transparent;
     border: 2px solid rgb(22, 6, 149);
     backdrop-filter: blur(2px);
-    box-shadow: 0 0 10px rgba(0, 0, 0,.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0,.1);
     color: white;
     padding: 40px;
     border-radius: 20px;

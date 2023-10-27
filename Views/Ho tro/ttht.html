@@ -22,33 +22,48 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="/Views/Login/login2.html"><i class="bx bxs-user mr-4"></i></a>
+                <!-- Đăng nhập trên điện thoại -->
+                <a id="login-button-phone" style="display: inline-block;" href="/Views/Login/login2.html"><i
+                        class="bx bxs-user mr-4"></i></a>
+                <!-- Đăng xuất trên điện thoại -->
+                <button onclick="logout()" style="display: none;" id="logout-button-phone">
+                    <i class="bx bxs-user-minus mr-4"></i>
+                </button>
             </div>
 
             <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu trên PC -->
                 <ul class="navbar-nav me-auto" id="menu">
-                    <li class="nav-item ">
+                    <li class="nav-link" id="welcome-user-phone" style="display: none; color: white;">
+                        <p class="text-end" style="margin: 0px;">Xin chào, <span id="user-greeting-phone"></span></p>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active menu-link" href="/Views/index.html" style="color: white;">Trang
                             chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách sạn</a>
+                        <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách
+                            sạn</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="/Views/homestay/Homestay.html"
                             style="color: white;">Homestay</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="/Views/Ho tro/hotro.html" style="color: white;">Hỗ trợ</a>
+                        <a class="nav-link menu-link" href="/Views/Ho tro/ttht.html" style="color: white;">Hỗ trợ</a>
                     </li>
                 </ul>
             </div>
 
             <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse"> <!-- Xác minh tài khoản -->
                 <li class="nav-item mx-1">
-                    <button class="nav-link btn btn-primary text-white">
-                        <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
-                    </button>
+                <li class="nav-link" id="welcome-user" style="display: none; color: white;">
+                    <p style="margin: 0px;">Xin chào, <span id="user-greeting"></span></p>
+                </li>
+                <button class="nav-link btn btn-primary text-white" onclick="logout()" style="display: none;"
+                    id="logout-button">Đăng xuất</button>
+                <button class="nav-link btn btn-primary" id="login-button">
+                    <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
+                </button>
                 </li>
             </ul>
         </div>
@@ -190,7 +205,16 @@
             </div>
             <div class="col-4">
                 <h3>Trợ giúp</h3>
-                <a href="/Views/Ho tro/hotro.html" style="color: white;">Trung tâm trợ giúp</a>
+                <ul style="list-style: none">
+                    <li>
+                        <a href="/Views/Ho tro/ttht.html" style="color: white;">Trung tâm trợ giúp</a>
+                    </li>
+                    <li>
+                        <button id="delete-account-button" class="btn btn-danger" onclick="deleteAccount()"
+                            style="margin: 5px;">Xóa
+                            tài khoản</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
@@ -202,6 +226,7 @@
     <script src="/Template/Ho tro/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="/Template/login/MyJavaScript/common.js"></script>
 </body>
 
 </html>

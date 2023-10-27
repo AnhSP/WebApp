@@ -26,6 +26,9 @@ main{
     height: 100%;
 
 }
+img.card-img-top{
+    margin-top: 10px !important;
+}
 .navbar-toggler{
     justify-content: end;
     border: none !important;
@@ -94,4 +97,9 @@ img.card-img-top{
     background-color: #f0f0f0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+/* Ẩn lời chào của điện thoại khi đang ở chế độ laptop */
+@media (min-width: 769px) {
+    #welcome-user-phone {
+      display: none !important;
+    }
+} 
