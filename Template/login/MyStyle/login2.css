@@ -12,8 +12,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
+<<<<<<< HEAD
     background: url("/Image/login/background/5.jpg");
  
+=======
+    background: url("/WebApp/Image/login/background/5.jpg");
+>>>>>>> 030ac1667ef828d83d48ddbef65889984c0b3ec8
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

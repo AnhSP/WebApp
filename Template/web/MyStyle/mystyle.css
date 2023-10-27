@@ -1,5 +1,5 @@
 header{
-    background-image: url("/Image/web/head14.jpg");
+    background-image: url("/WebApp/Image/web/head14.jpg");
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -58,19 +58,19 @@ ul#menu-search a:hover{
     color: hotpink !important;
 }
 #HaNoi{
-    background-image: url('/Image/web/hanoi1.jpeg'); 
+    background-image: url('/WebApp/Image/web/hanoi1.jpeg'); 
     background-position: center;
     background-size: cover;
     margin: 10px;
 }
 #HoChiMinh{
-    background-image: url('/Image/web/hcm1.jpg'); 
+    background-image: url('/WebApp/Image/web/hcm1.jpg'); 
     background-position: center;
     background-size: cover;
     margin: 10px;
 }
 #DaNang{
-    background-image: url('/Image/web/danang1.jpg'); 
+    background-image: url('/WebApp/Image/web/danang1.jpg'); 
     background-position: center;
     background-size: cover;
     margin: 10px;
