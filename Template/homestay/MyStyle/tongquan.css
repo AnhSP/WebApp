@@ -9,11 +9,14 @@
 }.right{
     width: 35%;
 }
-button.xem{
+button.xem,button.datp{
     border-radius: 5px;
 
 }
-button.xem:hover{
+button.datp{
+    right:25px;
+}
+button.xem,button.datp:hover{
     background-color: aqua;
 }
 .sao img{
