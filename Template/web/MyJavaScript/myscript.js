@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // alert(`Tìm kiếm với ngày đi: ${ngayDi}, ngày về: ${ngayVe}, thành phố: ${thanhPho}`);
       if (selectedOption === "Homestay") {
         // Điều hướng đến trang homestay
-        window.location.href = "/Views/homestay/Homestay.html";
+        window.location.href = "/WebApp/Views/homestay/Homestay.html";
       } else if (selectedOption === "Khách sạn") {
         // Điều hướng đến trang khách sạn
-        window.location.href = "/Views/Khach san/Khach san.html";
+        window.location.href = "/WebApp/Views/Khach san/Khach san.html";
       }
     } else {
       alert("Vui lòng nhập đủ thông tin và chọn một lựa chọn.");
