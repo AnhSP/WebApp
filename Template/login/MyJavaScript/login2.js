@@ -27,7 +27,7 @@ function checkLoginForm() {
         localStorage.setItem("userLoggedIn", "true");
 
         // Chuyển hướng sang trang chủ
-        window.location.href = "/Views/index.html";
+        window.location.href = "/WebApp/Views/index.html";
         return false;
     } else {
         alert(`Tên đăng nhập hoặc mật khẩu không đúng`);
