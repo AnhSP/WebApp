@@ -1,7 +1,7 @@
-ul#main-menu a{
+ul#menu a{
     position: relative;
 }
-ul#main-menu a::after{
+ul#menu a::after{
     content: "";
     height: 5px;
     width: 0px;
@@ -11,11 +11,11 @@ ul#main-menu a::after{
     left: 0;
     transition: all 0.5s ease-in-out;
 }
-ul#main-menu a:hover::after{
+ul#menu a:hover::after{
     width: 100%;
     /* transform: translateX(100%); */
 }
-ul#main-menu a:hover{
+ul#menu a:hover{
     color: yellow !important;
 }
 a{
@@ -24,10 +24,10 @@ a{
 main{
     width: 100%;
     height: 100%;
-
 }
 img.card-img-top{
     margin-top: 10px !important;
+    height: 100%;
 }
 .navbar-toggler{
     justify-content: end;
@@ -45,15 +45,12 @@ ul#menu-search a:hover{
 div.text-center a:hover{
     color: red;
 }
-.card-img-top{
-    height: 100%;
-}   
 footer{
     height: 50%;
 }
-.card{
+/* .card{
     margin: 10px;
-}
+} */
 img.card-img-top{
     height: 25vh!important;
     width: 35vh !important;

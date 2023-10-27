@@ -6,16 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trung tâm hỗ trợ</title>
-    <link rel="stylesheet" href="/Template/Ho tro/MyStyle/mystyle.css">
-    <link rel="stylesheet" href="/Template/Ho tro/bootstrap-5.2.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/Template/Ho tro/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/WebApp/Template/Ho tro/MyStyle/mystyle.css">
+    <link rel="stylesheet" href="/WebApp/Template/Ho tro/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/WebApp/Template/Ho tro/fontawesome-free-6.4.2-web/css/all.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark" id="nav"> <!-- Cụm menu -->
         <div class="container-lg">
-            <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
+            <a class="navbar-brand text-white" href="/WebApp/Views/index.html">VieHome</a>
 
             <div class="navbar-toggler"> <!-- Menu trên đt -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -23,7 +23,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Đăng nhập trên điện thoại -->
-                <a id="login-button-phone" style="display: inline-block;" href="/Views/Login/login2.html"><i
+                <a id="login-button-phone" style="display: inline-block;" href="/WebApp/Views/Login/login2.html"><i
                         class="bx bxs-user mr-4"></i></a>
                 <!-- Đăng xuất trên điện thoại -->
                 <button onclick="logout()" style="display: none;" id="logout-button-phone">
@@ -37,19 +37,19 @@
                         <p class="text-end" style="margin: 0px;">Xin chào, <span id="user-greeting-phone"></span></p>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active menu-link" href="/Views/index.html" style="color: white;">Trang
+                        <a class="nav-link active menu-link" href="/WebApp/Views/index.html" style="color: white;">Trang
                             chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách
+                        <a class="nav-link menu-link" href="/WebApp/Views/Khach san/Khach san.html" style="color: white;">Khách
                             sạn</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="/Views/homestay/Homestay.html"
+                        <a class="nav-link menu-link" href="/WebApp/Views/homestay/Homestay.html"
                             style="color: white;">Homestay</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="/Views/Ho tro/ttht.html" style="color: white;">Hỗ trợ</a>
+                        <a class="nav-link menu-link" href="/WebApp/Views/Ho tro/ttht.html" style="color: white;">Hỗ trợ</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +62,7 @@
                 <button class="nav-link btn btn-primary text-white" onclick="logout()" style="display: none;"
                     id="logout-button">Đăng xuất</button>
                 <button class="nav-link btn btn-primary" id="login-button">
-                    <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
+                    <a href="/WebApp/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
                 </button>
                 </li>
             </ul>
@@ -207,7 +207,7 @@
                 <h3>Trợ giúp</h3>
                 <ul style="list-style: none">
                     <li>
-                        <a href="/Views/Ho tro/ttht.html" style="color: white;">Trung tâm trợ giúp</a>
+                        <a href="/WebApp/Views/Ho tro/ttht.html" style="color: white;">Trung tâm trợ giúp</a>
                     </li>
                     <li>
                         <button id="delete-account-button" class="btn btn-danger" onclick="deleteAccount()"
@@ -220,13 +220,13 @@
     </footer>
 
     <!-- Khai báo các js -->
-    <script src="/Template/Ho tro/MyJavaScript/myscript.js"></script>
-    <script src="/Template/Ho tro/Jquery/jquery-3.7.1.min.js"></script>
-    <script src="/Template/Ho tro/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
-    <script src="/Template/Ho tro/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
+    <script src="/WebApp/Template/Ho tro/MyJavaScript/myscript.js"></script>
+    <script src="/WebApp/Template/Ho tro/Jquery/jquery-3.7.1.min.js"></script>
+    <script src="/WebApp/Template/Ho tro/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="/WebApp/Template/Ho tro/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="/Template/login/MyJavaScript/common.js"></script>
+    <script src="/WebApp/Template/login/MyJavaScript/common.js"></script>
 </body>
 
 </html>

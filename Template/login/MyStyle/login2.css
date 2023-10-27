@@ -7,12 +7,15 @@
 
 body {
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
-    background: url("/Image/homestay/hanoi/an's home/1.jpg")
-  
+    background: url("/WebApp/Image/login/background/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
