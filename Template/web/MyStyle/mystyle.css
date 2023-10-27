@@ -85,6 +85,10 @@ img{
     height: 25vh !important;
     width: 35vh !important;
 }
+img.card-img-top {
+    margin-top: 10px !important;
+}
+
 .card-3D {
     transition: transform 0.5s, background-color 0.5s;
 }

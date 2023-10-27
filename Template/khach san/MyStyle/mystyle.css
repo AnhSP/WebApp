@@ -26,6 +26,9 @@ main{
     height: 100%;
 
 }
+img.card-img-top{
+    margin-top: 10px !important;
+}
 .navbar-toggler{
     justify-content: end;
     border: none !important;
