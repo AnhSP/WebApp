@@ -13,9 +13,9 @@ body {
     align-items: center;
     background-color: #f2f2f2;
     background: url("/Image/login/background/5.jpg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 
