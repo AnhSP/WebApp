@@ -16,6 +16,13 @@ button.xem,button.datp{
 button.datp{
     right:25px;
 }
+button.mapp{
+    border-radius: 5px;
+    height: 35px;
+    margin-bottom: 10px;
+    width: 100px;
+    color: orangered;
+}
 button.xem,button.datp:hover{
     background-color: aqua;
 }
