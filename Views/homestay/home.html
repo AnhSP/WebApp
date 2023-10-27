@@ -21,56 +21,59 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="nav"> <!-- Cụm menu -->
         <div class="container-lg">
-          <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
-    
-          <div class="navbar-toggler"> <!-- Menu trên đt -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Đăng nhập trên điện thoại -->
-            <a id="login-button-phone" style="display: inline-block;" href="/Views/Login/login2.html"><i
-                class="bx bxs-user mr-4"></i></a>
-            <!-- Đăng xuất trên điện thoại -->
-            <button onclick="logout()" style="display: none;" id="logout-button-phone">
-              <i class="bx bxs-user-minus mr-4"></i>
-            </button>
-          </div>
-    
-          <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu trên PC -->
-            <ul class="navbar-nav me-auto" id="main-menu">
-              <li class="nav-link" id="welcome-user-phone" style="display: none; color: white;">
-                <p class="text-end" style="margin: 0px;">Xin chào, <span id="user-greeting-phone"></span></p>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active menu-link" href="/Views/index.html" style="color: white;">Trang chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách sạn</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-link" href="/Views/homestay/Homestay.html" style="color: white;">Homestay</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-link" href="/Views/Ho tro/ttht.html" style="color: white;">Hỗ trợ</a>
-              </li>
+            <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
+
+            <div class="navbar-toggler"> <!-- Menu trên đt -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Đăng nhập trên điện thoại -->
+                <a id="login-button-phone" style="display: inline-block;" href="/Views/Login/login2.html"><i
+                        class="bx bxs-user mr-4"></i></a>
+                <!-- Đăng xuất trên điện thoại -->
+                <button onclick="logout()" style="display: none;" id="logout-button-phone">
+                    <i class="bx bxs-user-minus mr-4"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu trên PC -->
+                <ul class="navbar-nav me-auto" id="main-menu">
+                    <li class="nav-link" id="welcome-user-phone" style="display: none; color: white;">
+                        <p class="text-end" style="margin: 0px;">Xin chào, <span id="user-greeting-phone"></span></p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link" href="/Views/index.html" style="color: white;">Trang
+                            chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách
+                            sạn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/Views/homestay/Homestay.html"
+                            style="color: white;">Homestay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/Views/Ho tro/ttht.html" style="color: white;">Hỗ trợ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse"> <!-- Xác minh tài khoản -->
+                <li class="nav-item mx-1">
+                <li class="nav-link" id="welcome-user" style="display: none; color: white;">
+                    <p style="margin: 0px;">Xin chào, <span id="user-greeting"></span></p>
+                </li>
+                <button class="nav-link btn btn-primary text-white" onclick="logout()" style="display: none;"
+                    id="logout-button">Đăng xuất</button>
+                <button class="nav-link btn btn-primary" id="login-button">
+                    <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
+                </button>
+                </li>
             </ul>
-          </div>
-    
-          <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse"> <!-- Xác minh tài khoản -->
-            <li class="nav-item mx-1">
-            <li class="nav-link" id="welcome-user" style="display: none; color: white;">
-              <p style="margin: 0px;">Xin chào, <span id="user-greeting"></span></p>
-            </li>
-            <button class="nav-link btn btn-primary text-white" onclick="logout()" style="display: none;"
-              id="logout-button">Đăng xuất</button>
-            <button class="nav-link btn btn-primary" id="login-button">
-              <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
-            </button>
-            </li>
-          </ul>
         </div>
-      </nav>
+    </nav>
 
     <div class="anhnen">
         <div class="anhchinh">
@@ -227,6 +230,42 @@
             </div>
         </div>
     </div>
+
+    <div id="danhsachphong">
+        <div class="all">
+            <h2>Danh sách các phòng còn trống</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="room-card">
+                        <div class="room-images">
+                            <div class="image-thumbnails">
+                                <!-- Ảnh phòng -->
+                                <img src="/Image/homestay/hanoi/an's home/1.jpg" alt="Thumbnail 1">
+                            </div>
+                            <div class="image-popup">
+                                <div class="image-popup-content">
+                                    <span class="popup-close">&times;</span>
+                                    <img src="/Image/homestay/hanoi/an's home/1.jpg" alt="Room Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-details">
+                            <h4>Tên phòng</h4>
+                            <p>Số giường: 2</p>
+                            <p>Số lượng khách: 3</p>
+                            <p class="room-features">Khu vực: Bếp, Phòng tắm riêng</p>
+                            <p class="room-services">Dịch vụ: Wifi miễn phí</p>
+                            <p class="room-price">$100/đêm</p>
+                            <button class="btn btn-primary">Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thêm phòng cùng loại(Phân theo cột) -->
+            </div>
+            <!-- Thêm phòng khác loại(Phân theo hàng) -->
+        </div>
+    </div>
+
     <div id="tiennghi">
         <div class="all">
             <h2>Tiện nghi và cơ sở vật chất</h2>
@@ -374,9 +413,6 @@
 
         </div>
     </div>
-    <div id="phong">
-
-    </div>
     <div id="chinhsach">
         <div class="allc">
             <h1>Quy định của chỗ nghỉ</h1>
@@ -437,54 +473,55 @@
 
     <footer class="bg-black text-white text-center p-4"> <!-- Phần dưới cùng -->
         <div class="row" style="margin: 0px;">
-          <div class="col-4">
-            <h3>Thành viên</h3>
-            <ul style="list-style: none">
-              <li>Lê Thị Quỳnh Anh</li>
-              <li>Nguyễn Đắc Anh</li>
-              <li>Nguyễn Mạnh Hùng</li>
-              <li>Vũ Ngọc Minh</li>
-            </ul>
-          </div>
-          <div class="col-4">
-            <h3>Thông tin liên hệ</h3>
-            <ul style="list-style: none">
-              <li>
-                <a href="https://www.facebook.com/blader.buster.9" style="color: white;">
-                  <i class="fa-brands fa-facebook" style="color: #0561ff;"></i></i>Quỳnh Anh
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/channel/UC8vmMGd34GkBUZ_KodSG6XQ" style="color: white;">
-                  <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>Đắc Anh
-                </a>
-              </li>
-              <li>
-                <a href="" style="color: white;">
-                  <i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>Mạnh Hùng
-                </a>
-              </li>
-              <li>
-                <a href="" style="color: white;">
-                  <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Ngọc Minh
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-4">
-            <h3>Trợ giúp</h3>
-            <ul style="list-style: none">
-              <li>
-                <a href="/Views/Ho tro/ttht.html" style="color: white;">Trung tâm trợ giúp</a>
-              </li>
-              <li>
-                <button id="delete-account-button" class="btn btn-danger" onclick="deleteAccount()" style="margin: 5px;">Xóa
-                  tài khoản</button>
-              </li>
-            </ul>
-          </div>
+            <div class="col-4">
+                <h3>Thành viên</h3>
+                <ul style="list-style: none">
+                    <li>Lê Thị Quỳnh Anh</li>
+                    <li>Nguyễn Đắc Anh</li>
+                    <li>Nguyễn Mạnh Hùng</li>
+                    <li>Vũ Ngọc Minh</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>Thông tin liên hệ</h3>
+                <ul style="list-style: none">
+                    <li>
+                        <a href="https://www.facebook.com/blader.buster.9" style="color: white;">
+                            <i class="fa-brands fa-facebook" style="color: #0561ff;"></i></i>Quỳnh Anh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC8vmMGd34GkBUZ_KodSG6XQ" style="color: white;">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>Đắc Anh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" style="color: white;">
+                            <i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>Mạnh Hùng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" style="color: white;">
+                            <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Ngọc Minh
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>Trợ giúp</h3>
+                <ul style="list-style: none">
+                    <li>
+                        <a href="/Views/Ho tro/ttht.html" style="color: white;">Trung tâm trợ giúp</a>
+                    </li>
+                    <li>
+                        <button id="delete-account-button" class="btn btn-danger" onclick="deleteAccount()"
+                            style="margin: 5px;">Xóa
+                            tài khoản</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </footer>
+    </footer>
     <script>
         window.onscroll = function () { myFunction() };
         var navbar = document.getElementById("navbar");
@@ -521,9 +558,13 @@
     <!-- Khai báo các thư viện js -->
     <script src="/Template/homestay/Jquery/jquery-3.7.1.min.js"></script>
     <script src="/Template/homestay/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
-    <script src="/Template/homestay/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="/Template/homestay/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="/Template/homestay/MyJavaScript/myscript.js"></script>
     <script src="/Template/login/MyJavaScript/common.js"></script>
 </body>
 

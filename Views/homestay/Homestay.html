@@ -14,56 +14,59 @@
 <body>
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark" id="nav"> <!-- Cụm menu -->
         <div class="container-lg">
-          <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
-    
-          <div class="navbar-toggler"> <!-- Menu trên đt -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Đăng nhập trên điện thoại -->
-            <a id="login-button-phone" style="display: inline-block;" href="/Views/Login/login2.html"><i
-                class="bx bxs-user mr-4"></i></a>
-            <!-- Đăng xuất trên điện thoại -->
-            <button onclick="logout()" style="display: none;" id="logout-button-phone">
-              <i class="bx bxs-user-minus mr-4"></i>
-            </button>
-          </div>
-    
-          <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu trên PC -->
-            <ul class="navbar-nav me-auto" id="main-menu">
-              <li class="nav-link" id="welcome-user-phone" style="display: none; color: white;">
-                <p class="text-end" style="margin: 0px;">Xin chào, <span id="user-greeting-phone"></span></p>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active menu-link" href="/Views/index.html" style="color: white;">Trang chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách sạn</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-link" href="/Views/homestay/Homestay.html" style="color: white;">Homestay</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-link" href="/Views/Ho tro/ttht.html" style="color: white;">Hỗ trợ</a>
-              </li>
+            <a class="navbar-brand text-white" href="/Views/index.html">VieHome</a>
+
+            <div class="navbar-toggler"> <!-- Menu trên đt -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Đăng nhập trên điện thoại -->
+                <a id="login-button-phone" style="display: inline-block;" href="/Views/Login/login2.html"><i
+                        class="bx bxs-user mr-4"></i></a>
+                <!-- Đăng xuất trên điện thoại -->
+                <button onclick="logout()" style="display: none;" id="logout-button-phone">
+                    <i class="bx bxs-user-minus mr-4"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu trên PC -->
+                <ul class="navbar-nav me-auto" id="main-menu">
+                    <li class="nav-link" id="welcome-user-phone" style="display: none; color: white;">
+                        <p class="text-end" style="margin: 0px;">Xin chào, <span id="user-greeting-phone"></span></p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link" href="/Views/index.html" style="color: white;">Trang
+                            chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/Views/Khach san/Khach san.html" style="color: white;">Khách
+                            sạn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/Views/homestay/Homestay.html"
+                            style="color: white;">Homestay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/Views/Ho tro/ttht.html" style="color: white;">Hỗ trợ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse"> <!-- Xác minh tài khoản -->
+                <li class="nav-item mx-1">
+                <li class="nav-link" id="welcome-user" style="display: none; color: white;">
+                    <p style="margin: 0px;">Xin chào, <span id="user-greeting"></span></p>
+                </li>
+                <button class="nav-link btn btn-primary text-white" onclick="logout()" style="display: none;"
+                    id="logout-button">Đăng xuất</button>
+                <button class="nav-link btn btn-primary" id="login-button">
+                    <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
+                </button>
+                </li>
             </ul>
-          </div>
-    
-          <ul class="navbar-nav navbar justify-content-end collapse navbar-collapse"> <!-- Xác minh tài khoản -->
-            <li class="nav-item mx-1">
-            <li class="nav-link" id="welcome-user" style="display: none; color: white;">
-              <p style="margin: 0px;">Xin chào, <span id="user-greeting"></span></p>
-            </li>
-            <button class="nav-link btn btn-primary text-white" onclick="logout()" style="display: none;"
-              id="logout-button">Đăng xuất</button>
-            <button class="nav-link btn btn-primary" id="login-button">
-              <a href="/Views/Login/login2.html" style="color: white;">Đăng nhập</a>
-            </button>
-            </li>
-          </ul>
         </div>
-      </nav>
+    </nav>
 
     <main>
         <div class="container" style="width: 100%; height: 100%;">
@@ -84,30 +87,31 @@
                 <div class="row justify-content-center" style="width: 100%; height: 100%; margin: 5px;">
                     <div class="card hotel-card col-4 " style="width: 18rem;">
                         <a href="/Views/homestay/home.html">
-                            <img class="card-img-top" src="/Image/homestay/Show(bày bán)/hn1.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hanoi/an's home/22.jpg" alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Lii’s Homestay Hà Nộii</h4>
+                            <h4>An's Home</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 680.000</ul>
+                            <ul style="color: red;" class="text-end">VND 1.580.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card col-4 " style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/ho chi minh/hcm1.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hcm/holo fairy houses/2.jpg"
+                                alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>M&K Signature - Homestay Sài Gòn</h4>
+                            <h4>Holo Fairy Houses</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <p style="color: red;" class="text-end">VND 550.000</p>
+                            <p style="color: red;" class="text-end">VND 710.000</p>
                         </div>
                     </div>
                     <div class="card hotel-card col-4" style="width: 18rem;">
-                            <a href="#">
-                                <img class="card-img-top" src="/Image/homestay/da nang/dn1.webp" alt="Homestay1" />
-                            </a>
+                        <a href="#">
+                            <img class="card-img-top" src="/Image/homestay/danang/minh house/1.webp" alt="Homestay1" />
+                        </a>
                         <div class="card-body">
-                            <h4>Minh House Đà Nẵng</h4>
+                            <h4>Minh House</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
                             <ul style="color: red;" class="text-end">VND 784.000</ul>
                         </div>
@@ -116,30 +120,30 @@
                 <div class="row justify-content-center" style="width: 100%; height: 100%; margin: 5px;">
                     <div class="card hotel-card col-4" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/Show(bày bán)/hn2.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hanoi/chips house/17.jpg" alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>TSazi Homestay Hà Nội</h4>
+                            <h4>Chips House</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
                             <ul style="color: red;" class="text-end">VND 800.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card col-4" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/ho chi minh/hcm2.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hcm/leiden/1.jpg" alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Chez Mimosa Home TP.HCM</h4>
+                            <h4>Leiden</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
                             <ul style="color: red;" class="text-end">VND 950.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card col-4" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/da nang/dn2.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/danang/nang house/1.webp" alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Nắng House Homestay Đà NẵngL</h4>
+                            <h4>Nắng House Homestay</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
                             <ul style="color: red;" class="text-end">VND 695.000</ul>
                         </div>
@@ -148,27 +152,30 @@
                 <div class="row justify-content-center" style="width: 100%; height: 100%; margin: 5px;">
                     <div class="card hotel-card col-4" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/Show(bày bán)/hn3.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hanoi/mộng homestay/10.jpg"
+                                alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Mia Casa by Satori Homestay Hà Nội</h4>
+                            <h4>Mộng Homestay</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 900.000</ul>
+                            <ul style="color: red;" class="text-end">VND 610.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card col-4" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/ho chi minh/hcm3.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hcm/springfield cottage/20.jpg"
+                                alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Leiden Homestay & Café</h4>
+                            <h4>Springfield Cottage</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 2.340.000</ul>
+                            <ul style="color: red;" class="text-end">VND 1.340.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card col-4" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/da nang/dn3.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/danang/hama boutique/1.webp"
+                                alt="Homestay1" />
                         </a>
                         <div class="card-body">
                             <h4>HAMA Boutique Home</h4>
@@ -182,101 +189,105 @@
             <div class="mobile-row"><!-- Giao diện cho điện thoại -->
                 <div class="row justify-content-center" style="width: 100%; height: 100%; margin: 5px;">
 
-                    <!-- Khách sạn Hà Nội -->
+                    <!-- Homestay Hà Nội -->
                     <div class="text-center" style="width: 18rem;">
                         <a href="#">Hà Nội</a>
                     </div>
                     <div class="card hotel-card" style="width: 18rem;">
-                        <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/Show(bày bán)/hn1.webp" alt="Homestay1" />
+                        <a href="/Views/homestay/home.html">
+                            <img class="card-img-top" src="/Image/homestay/hanoi/an's home/22.jpg" alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Lii’s Homestay Hà Nộii</h4>
+                            <h4>An's Home</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 680.000</ul>
+                            <ul style="color: red;" class="text-end">VND 1.580.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/Show(bày bán)/hn2.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hanoi/chips house/17.jpg" alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>TSazi Homestay Hà Nội</h4>
+                            <h4>Chips House</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
                             <ul style="color: red;" class="text-end">VND 800.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/Show(bày bán)/hn3.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hanoi/mộng homestay/10.jpg"
+                                alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Mia Casa by Satori Homestay Hà Nội</h4>
+                            <h4>Mộng Homestay</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 900.000</ul>
+                            <ul style="color: red;" class="text-end">VND 610.000</ul>
                         </div>
                     </div>
-                    <!-- Khách sạn Hồ Chí Minh -->
+                    <!-- Homestay Hồ Chí Minh -->
                     <div class="text-center" style="width: 18rem;">
                         <a href="#">Hồ Chí Minh</a>
                     </div>
                     <div class="card hotel-card" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/ho chi minh/hcm1.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hcm/holo fairy houses/2.jpg"
+                                alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>M&K Signature - Homestay Sài Gòn</h4>
+                            <h4>Holo Fairy Houses</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <p style="color: red;" class="text-end">VND 550.000</p>
+                            <p style="color: red;" class="text-end">VND 710.000</p>
                         </div>
                     </div>
                     <div class="card hotel-card" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/ho chi minh/hcm2.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hcm/leiden/1.jpg" alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Chez Mimosa Home TP.HCM</h4>
+                            <h4>Leiden</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
                             <ul style="color: red;" class="text-end">VND 950.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/homestay/ho chi minh/hcm3.webp" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/hcm/springfield cottage/20.jpg"
+                                alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Leiden Homestay & Café</h4>
+                            <h4>Springfield Cottage</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
-                            <ul style="color: red;" class="text-end">VND 2.340.000</ul>
+                            <ul style="color: red;" class="text-end">VND 1.340.000</ul>
                         </div>
                     </div>
-                    <!-- Khách sạn Đà Nẵng -->
+                    <!-- Homestay Đà Nẵng -->
                     <div class="text-center" style="width: 18rem;">
                         <a href="#">Đà Nẵng</a>
                     </div>
                     <div class="card hotel-card" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/khach san/da nang/dn1.jpg" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/danang/minh house/1.webp" alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Minh House Đà Nẵng</h4>
+                            <h4>Minh House</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
                             <ul style="color: red;" class="text-end">VND 784.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/khach san/da nang/dn2.png" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/danang/nang house/1.webp" alt="Homestay1" />
                         </a>
                         <div class="card-body">
-                            <h4>Nắng House Homestay Đà NẵngL</h4>
+                            <h4>Nắng House Homestay</h4>
                             <i>Giá mỗi đêm rẻ nhất từ</i>
                             <ul style="color: red;" class="text-end">VND 695.000</ul>
                         </div>
                     </div>
                     <div class="card hotel-card" style="width: 18rem;">
                         <a href="#">
-                            <img class="card-img-top" src="/Image/khach san/da nang/dn3.jpg" alt="Homestay1" />
+                            <img class="card-img-top" src="/Image/homestay/danang/hama boutique/1.webp"
+                                alt="Homestay1" />
                         </a>
                         <div class="card-body">
                             <h4>HAMA Boutique Home</h4>
@@ -292,54 +303,55 @@
 
     <footer class="bg-black text-white text-center p-4"> <!-- Phần dưới cùng -->
         <div class="row" style="margin: 0px;">
-          <div class="col-4">
-            <h3>Thành viên</h3>
-            <ul style="list-style: none">
-              <li>Lê Thị Quỳnh Anh</li>
-              <li>Nguyễn Đắc Anh</li>
-              <li>Nguyễn Mạnh Hùng</li>
-              <li>Vũ Ngọc Minh</li>
-            </ul>
-          </div>
-          <div class="col-4">
-            <h3>Thông tin liên hệ</h3>
-            <ul style="list-style: none">
-              <li>
-                <a href="https://www.facebook.com/blader.buster.9" style="color: white;">
-                  <i class="fa-brands fa-facebook" style="color: #0561ff;"></i></i>Quỳnh Anh
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/channel/UC8vmMGd34GkBUZ_KodSG6XQ" style="color: white;">
-                  <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>Đắc Anh
-                </a>
-              </li>
-              <li>
-                <a href="" style="color: white;">
-                  <i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>Mạnh Hùng
-                </a>
-              </li>
-              <li>
-                <a href="" style="color: white;">
-                  <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Ngọc Minh
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-4">
-            <h3>Trợ giúp</h3>
-            <ul style="list-style: none">
-              <li>
-                <a href="/Views/Ho tro/ttht.html" style="color: white;">Trung tâm trợ giúp</a>
-              </li>
-              <li>
-                <button id="delete-account-button" class="btn btn-danger" onclick="deleteAccount()" style="margin: 5px;">Xóa
-                  tài khoản</button>
-              </li>
-            </ul>
-          </div>
+            <div class="col-4">
+                <h3>Thành viên</h3>
+                <ul style="list-style: none">
+                    <li>Lê Thị Quỳnh Anh</li>
+                    <li>Nguyễn Đắc Anh</li>
+                    <li>Nguyễn Mạnh Hùng</li>
+                    <li>Vũ Ngọc Minh</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>Thông tin liên hệ</h3>
+                <ul style="list-style: none">
+                    <li>
+                        <a href="https://www.facebook.com/blader.buster.9" style="color: white;">
+                            <i class="fa-brands fa-facebook" style="color: #0561ff;"></i></i>Quỳnh Anh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC8vmMGd34GkBUZ_KodSG6XQ" style="color: white;">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>Đắc Anh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" style="color: white;">
+                            <i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>Mạnh Hùng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" style="color: white;">
+                            <i class="fa-brands fa-discord" style="color: #11ff00;"></i>Ngọc Minh
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>Trợ giúp</h3>
+                <ul style="list-style: none">
+                    <li>
+                        <a href="/Views/Ho tro/ttht.html" style="color: white;">Trung tâm trợ giúp</a>
+                    </li>
+                    <li>
+                        <button id="delete-account-button" class="btn btn-danger" onclick="deleteAccount()"
+                            style="margin: 5px;">Xóa
+                            tài khoản</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </footer>
+    </footer>
 
     <!-- Khai báo các js -->
     <script src="/Template/homestay/MyJavaScript/myscript.js"></script>
