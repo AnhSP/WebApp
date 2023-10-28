@@ -522,39 +522,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        window.onscroll = function () { myFunction() };
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-        // JavaScript để xử lý sự kiện khi người dùng ấn vào các phần tử trên thanh navbar
-        const navbarLinks = document.querySelectorAll('.navbar a');
-
-        navbarLinks.forEach(link => {
-            link.addEventListener('click', smoothScroll);
-        });
-
-        function smoothScroll(event) {
-            event.preventDefault();
-
-
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-
-
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-
-    </script>
     <!-- Khai báo các thư viện js -->
     <script src="/WebApp/Template/homestay/Jquery/jquery-3.7.1.min.js"></script>
     <script src="/WebApp/Template/homestay/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
