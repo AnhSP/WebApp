@@ -79,7 +79,6 @@ function signup() {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
     alert(`Chúc mừng bạn đã đăng ký thành công`);
-    // Chuyển hướng về trang đăng nhập
     showLoginForm();
     return false; // Ngăn form được submit
 

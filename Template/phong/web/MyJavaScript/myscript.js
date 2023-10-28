@@ -35,16 +35,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const ngayDi = document.querySelector("#ngay-di").value;
     const ngayVe = document.querySelector("#ngay-ve").value;
     const thanhPho = document.querySelector("#thanh-pho").value;
-    const selectedOption = document.querySelector(".selected").textContent.trim();// Lựa chọn đã chọn
+    const selectedOption = document.querySelector(".selected").textContent.trim();// Lọc lựa chọn tránh bị thừa dấu xuống dòng
 
     if (ngayDi && ngayVe && thanhPho !== "Thành phố") {
       // alert(`Tìm kiếm với ngày đi: ${ngayDi}, ngày về: ${ngayVe}, thành phố: ${thanhPho}`);
       if (selectedOption === "Homestay") {
-        // Điều hướng đến trang homestay
-        window.location.href = "/Views/homestay/Homestay.html";
+
+        // Điều hướng đến các trang homestay
+        if (thanhPho === "HN") {
+          window.location.href = "/WebApp/Views/homestay/Thanh pho/hanoi.html";
+        } else if (thanhPho === "HCM") {
+          window.location.href = "/WebApp/Views/homestay/Thanh pho/hcm.html";
+        } else if (thanhPho === "DN") {
+          window.location.href = "/WebApp/Views/homstay/Thanh pho/dannang.html";
+        }
+
       } else if (selectedOption === "Khách sạn") {
-        // Điều hướng đến trang khách sạn
-        window.location.href = "/Views/Khach san/Khach san.html";
+        // Điều hướng đến các trang khách sạn
+        window.location.href = "/WebApp/Views/Khach san/Thanh pho/Khach san.html";
+        if (thanhPho == "HN") {
+          window.location.href = "/WebApp/Views/Khach san/Thanh pho/hanoi.html";
+        } else if (thanhPho === "HCM") {
+          window.location.href = "/WebApp/Views/Khach san/Thanh pho/hcm.html";
+        } else if (thanhPho === "DN") {
+          window.location.href = "/WebApp/Views/Khach san/Thanh pho/danang.html";
+        }
       }
     } else {
       alert("Vui lòng nhập đủ thông tin và chọn một lựa chọn.");
