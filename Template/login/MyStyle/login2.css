@@ -11,14 +11,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     background: url("/WebApp/Image/login/background/5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
-
 .all {
     width: 50%;
     max-width: 600px;
@@ -48,10 +46,10 @@ body {
     display: block;
     margin-bottom: 5px;
 }
-
 .all .input input {
     position: relative;
     width: 100%;
+    /* chuyển padding thấp xuống sẽ thấy phần màu đỏ ko bị đè lên mk, rember */
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -59,7 +57,8 @@ body {
 
 .input .error {
     color: red;
-    font-size: 14px;
+    font-size: 14px ;
+    display: block ;
 }
 .input button {
     width: 100%;
