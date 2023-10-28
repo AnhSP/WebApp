@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Kiểm tra SĐT
         if (phoneInput.value.trim() === '') {
-            nameError.textContent = 'Vui lòng nhập số điện thoại';
+            phoneError.textContent = 'Vui lòng nhập số điện thoại';
             isValid = false;
         } else {
             nameError.textContent = '';
