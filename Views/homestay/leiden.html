@@ -117,7 +117,7 @@
                     <button class="nho">Toàn bộ căn hộ</button>
                 </div>
                 <div class="ten">
-                    <div class="tennho" style="color: orangered; font-size: 30px;">leiden</div>
+                    <div class="tennho" style="color: orangered; font-size: 30px;">Leiden</div>
                     <div class="sao">
                         <img src="/WebApp/Image/homestay/iconn/Red_star.svg (1).png" alt="">
                         <img src="/WebApp/Image/homestay/iconn/Red_star.svg (1).png" alt="">
@@ -139,7 +139,7 @@
 
                 </p>
             </div>
-            <div class="twoo">
+            <div class="two">
                 <h3>Điểm nổi bật</h3>
                 <div class="threed">
                     <div class="first">
@@ -165,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="threee">
+            <div class="three">
                 <h3>Các dịch vụ đang có khuyến mại</h3>
                 <div class="dichvuu">
                     <div class="dichvu">
@@ -205,16 +205,27 @@
                             <img class="anhhh" src="/WebApp/Image/homestay/iconn/thumb-up.png" alt="">
                         </span>
                     </div>
-                 
+                    <div class="danhgia">
+                        <span>phòng tắm 21
+                            <img class="anhhh" src="/Image/homestay/iconn/thumb-up.png" alt="">
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="map">
+<!-- <<<<<<<< HEAD:Views/Khach san/nikko.html
+                <button>tên khách sạn</button>
+                <div style="width: 100%">
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=468&amp;height=400&amp;hl=en&amp;q=Nikko Hotel-The Classy Life&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" >
+======== -->
                 <button class="mapp">Leiden</button>
                 <div style="width: 100%">
                     <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?q=138%2F13+%C4%90.+B%C3%B9i+Th%E1%BB%8B+Xu%C3%A2n%2C+Ph%C6%B0%E1%BB%9Dng+Ph%E1%BA%A1m+Ng%C5%A9+L%C3%A3o%2C+Qu%E1%BA%ADn+1%2C+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh%2C+Vi%E1%BB%87t+Nam&amp;hl=en&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                     </iframe>
                 </div>
+
             </div>
         </div>
     </div>
@@ -243,7 +254,7 @@
                             <p class="room-features">Khu vực: Bếp, Phòng tắm riêng</p>
                             <p class="room-services">Dịch vụ: Wifi miễn phí</p>
                             <p class="room-price">980.000 đ</p>
-                            <button class="btn btn-primary">Đặt ngay</button>
+                            <button onclick="checkBook1()" class="btn btn-primary">Đặt ngay</button>
                         </div>
                     </div>
                 </div>
@@ -400,9 +411,6 @@
 
         </div>
     </div>
-    <div id="phong">
-
-    </div>
     <div id="chinhsach">
         <div class="allc">
             <h1>Quy định của chỗ nghỉ</h1>
@@ -495,6 +503,85 @@
                     </div>
                 <br>
             </div> 
+<!-- <<<<<<<< HEAD:Views/Khach san/nikko.html
+            <div class="item" >
+                <div class="name">
+                    <h3><img class="avatar" src="image/avt11.jpg" alt="avatar"> Smoker</h3>
+                </div>
+                <hr>
+                <div class="link">
+                    Homestay: <a href="#">link</a>
+                </div>
+                <div class="evaluate">
+                    <h5>Evaluate: Normal</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Nothing special, everything still lacks a lot, but in return for the attentive 
+                        service, next time I come back to hope the quality will be improved better. 
+                        Evaluate 3 stars  </p>
+                </div>
+                <div class="times"> 
+                    <p class="fas fa-clock"> 2 month ago</p>
+                </div>
+            </div>
+            <div class="item" >
+                <div class="name">
+                    <h3><img class="avatar" src="image/avt17.jpg" alt="avatar"> Quỳnh</h3>
+                </div>
+                <hr>
+                <div class="link">
+                    Homestay: <a href="#">link</a>
+                </div>
+                <div class="evaluate">
+                    <h5>Evaluate: Very Good</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>chất lượng dịch vụ rất tốt, nhân viên rất nhiệt tình </p>
+                </div>
+                <div class="times"> 
+                    <p class="fas fa-clock"> 5 months ago</p>
+                </div>
+            </div>
+            <div class="item" >
+                <div class="name">
+                    <h3><img class="avatar" src="image/avt18.jpg" alt="avatar"> M</h3>
+                </div>
+                <hr>
+                <div class="link">
+                    Homestay: <a href="#">link</a>
+                </div>
+                <div class="evaluate">
+                    <h5>Evaluate: Good</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>나는 호텔에 3 일 동안 머물렀고 상당히 만족했다. 호텔에는 공항에 차가 있으며 외부보다 
+                        등이 저렴합니다. 2 시간 일찍 확인하지만 무료입니다. 1 인용 공간은 더블 침대, 에어컨, 
+                        냉장고 (생수, 청량 음료 ...).</p>
+                </div>
+                <div class="times"> 
+                    <p class="fas fa-clock"> 6 months ago</p>
+                </div>
+            </div>
+            <br>
+       </div>  
+    </section>
+
+======== -->
         
                 <div class="list">
                     <div class="item" >
@@ -743,7 +830,6 @@
                     <br>
                </div>  
             </section>
-        
     </div>
 
     <footer class="bg-black text-white text-center p-4"> <!-- Phần dưới cùng -->
@@ -798,6 +884,7 @@
     
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="/WebApp/Template/homestay/MyJavaScript/Leiden/homestay.js"></script>
 </body>
 
 </html>
